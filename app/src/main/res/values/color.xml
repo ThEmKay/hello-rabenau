@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#3949ab</color> <!--Blue #616161 #1565c0-->
+    <color name="ColorPrimaryDark">#303f9f</color> <!--Blue #424242 #0d47a1-->
+    <color name="TextBackground">#5c6bc0</color>
+    <!-- darkBlue #0d47a1 -->
+</resources>

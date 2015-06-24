@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">RefugeeHelpVB</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="medical">Medical</string>
+    <string name="transit">Transit</string>
+    <string name="calendar">Calendar</string>
     <string name="action_settings">Settings</string>
 </resources>
