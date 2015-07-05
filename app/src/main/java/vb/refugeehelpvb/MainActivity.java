@@ -21,10 +21,14 @@ public class MainActivity extends ActionBarActivity {
         mRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
 
+        ResourceProvider.getInstance(getApplicationContext());
+
+
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new CardAdapter();
+        mAdapter = new CardAdapter(getApplicationContext());
+
         mRecyclerView.setAdapter(mAdapter);
 
         /*mAdapter = new SimpleAdapter();
