@@ -4,4 +4,10 @@
     <string name="transit">Transit</string>
     <string name="calendar">Calendar</string>
     <string name="action_settings">Settings</string>
+    <string name="doctor1">Dr. Jochen M\u00fcller</string>
+    <string name="doctor1_address">Alicestra\u00dfe 17</string>
+    <string name="doctor1_location">36304 Alsfeld</string>
+    <string name="doctor2">Dr. Rehm, Dr. Ruckelshausen</string>
+    <string name="doctor2_address">Lampertweg 11</string>
+    <string name="doctor2_location">36320 Kirtorf</string>
 </resources>

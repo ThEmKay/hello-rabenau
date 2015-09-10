@@ -17,13 +17,12 @@
         android:background="#1e88e5">
 
         <ImageView
-            android:id="@+id/img_thumbnail"
             android:layout_width="fill_parent"
             android:layout_height="150dp"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:id="@+id/mainPhoto"/>
 
         <TextView
-            android:id="@+id/tv_name"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -35,6 +34,7 @@
             android:textSize="@dimen/abc_text_size_headline_material"
             android:textColor="#FFFFFF"
             android:text="Test"
+            android:id="@+id/mainCategory"
             />
 
     </android.support.v7.widget.CardView>
