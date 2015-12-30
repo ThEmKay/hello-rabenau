@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hello!</string>
+
+    <string name="alsfeld">Alsfeld</string>
+    <string name="lauterbach">Lauterbach</string>
+    <string name="places_cat_playgrounds">Terrain de jeu</string>
+    <string name="places_cat_pharmacies">Pharmacie</string>
+    <string name="places_cat_food">Vivres</string>
+    <string name="places_cat_education">Instruction</string>
+    <string name="places_cat_clothes">Vetements</string>
+    <string name="places_cat_www">Acces internet</string>
+    <string name="places_cat_sports">Sport</string>
+    <string name="hometown">Cite</string>
+    <string name="btn_informationen">Informations</string>
+    <string name="ambulance">Aid Medicale d Urgence</string>
+</resources>

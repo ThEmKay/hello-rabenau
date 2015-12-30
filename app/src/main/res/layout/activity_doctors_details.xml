@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/lblOpenhours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/label_openhours"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/label"/>
+
+    <TextView
+        android:id="@+id/lblLangs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/label_spokenlangs"
+        android:textColor="@color/label"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblOpenhours" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/label_address"
+        android:textColor="@color/label"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblLangs" />
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

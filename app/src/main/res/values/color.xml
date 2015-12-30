@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ColorPrimary">#3949ab</color> <!--Blue #616161 #1565c0-->
-    <color name="ColorPrimaryDark">#303f9f</color> <!--Blue #424242 #0d47a1-->
+    <color name="MainPrimary">#444</color> <!--Blue #616161 #1565c0-->
+    <color name="MainPrimaryDark">#000</color> <!--Blue #424242 #0d47a1-->
     <color name="TextBackground">#5c6bc0</color>
+
+    <color name="white">#fff</color>
+    <color name="orange">#FFBB33</color>
+    <color name="label">#666</color>
+
+    <color name="ActionBarSettings">#666</color>
+
+    <color name="DoctorsPrimary">#AA66CC</color>
+    <color name="DoctorsPrimaryDark">#592572</color>
+
+    <color name="PlacesPrimary">#FFBB33</color>
+    <color name="PlacesPrimaryDark">#CC8A00</color>
+
+    <color name="PublicTransportPrimary">#99CC00</color>
+    <color name="PublicTransportPrimaryDark">#536F00</color>
+
+    <color name="CalendarPrimary">#0066FF</color>
+    <color name="CalendarPrimaryDark">#00327D</color>
+
+    <color name="EmergencyPrimary">#CC0000</color>
+    <color name="EmergencyPrimaryDark">#660000</color>
+
+
     <!-- darkBlue #0d47a1 -->
 </resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hometown"
+        android:textColor="#666"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/selCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCity"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/lblUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#666"
+        android:text="Daten aktualisieren"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/selCity"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblOffline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keine Verbindung"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:layout_below="@id/lblUpdate"
+        android:drawableLeft="@drawable/ic_network_red"
+        android:drawablePadding="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUpdate"
+        android:layout_margin="0dp"
+        android:id="@+id/btnUpdate"
+        android:drawableLeft="@drawable/ic_download"
+        android:textSize="20dp"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:text="Updates suchen"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/lblServerOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keine Serververbindung"
+        android:textColor="#666"
+        android:visibility="invisible"
+        android:textSize="16dp"
+        android:layout_below="@id/lblUpdate"
+        android:drawableLeft="@drawable/ic_no"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblDataOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daten sind aktuell"
+        android:textColor="#666"
+        android:visibility="invisible"
+        android:textSize="16dp"
+        android:layout_below="@id/lblUpdate"
+        android:drawableLeft="@drawable/ic_ok"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>

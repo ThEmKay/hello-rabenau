@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorName"
+        android:layout_alignParentTop="true"
+        android:textColor="#000"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:id="@+id/doctorId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorAdress"
+        android:layout_below="@+id/doctorName"
+        android:textColor="#333"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorCity"
+        android:layout_below="@+id/doctorAdress"
+        android:textColor="#333"
+        android:textSize="16dp"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imgLanguage1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imgLanguage2"
+        android:layout_toLeftOf="@+id/imgLanguage1"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imgLanguage3"
+        android:layout_toLeftOf="@+id/imgLanguage2"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

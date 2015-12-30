@@ -1,9 +1,133 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/ColorPrimary</item>
-        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+    <!-- MAIN style -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/MainPrimary</item>
+        <item name="colorPrimaryDark">@color/MainPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarMain</item>
+        <item name="android:actionBarStyle">@style/ActionBarMain</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/ActionBarMainMenu</item>
+        <item name="actionOverflowButtonStyle">@style/ActionBarMainMenu</item>-->
+    </style>
+    <style name="ActionBarMain" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/MainPrimary</item>
+        <item name="background">@color/MainPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:logo">@drawable/ic_action_bar_menu</item>
+        <item name="logo">@drawable/ic_app_logo</item>
+    </style>
+    <!-- ########### -->
+
+    <!-- SETTINGS style -->
+    <style name="AppSettings" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/ActionBarSettings</item>
+        <item name="colorPrimaryDark">#333</item>
+        <item name="actionBarStyle">@style/ActionBarSettings</item>
+        <item name="android:actionBarStyle">@style/ActionBarSettings</item>
+    </style>
+    <style name="ActionBarSettings" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/ActionBarSettings</item>
+        <item name="background">@color/ActionBarSettings</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
+    <!-- DOCTORS style -->
+    <style name="AppDoctors" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/DoctorsPrimary</item>
+        <item name="colorPrimaryDark">@color/DoctorsPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarDoctors</item>
+        <item name="android:actionBarStyle">@style/ActionBarDoctors</item>
+    </style>
+    <style name="ActionBarDoctors" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/DoctorsPrimary</item>
+        <item name="background">@color/DoctorsPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
+    <!-- PLACES style -->
+    <style name="AppPlaces" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/PlacesPrimary</item>
+        <item name="colorPrimaryDark">@color/PlacesPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarPlaces</item>
+        <item name="android:actionBarStyle">@style/ActionBarPlaces</item>
+    </style>
+    <style name="ActionBarPlaces" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/PlacesPrimary</item>
+        <item name="background">@color/PlacesPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
+    <!-- PUBLIC TRANSPORT style -->
+    <style name="AppPublicTransport" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/PublicTransportPrimary</item>
+        <item name="colorPrimaryDark">@color/PublicTransportPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarPublicTransport</item>
+        <item name="android:actionBarStyle">@style/ActionBarPublicTransport</item>
+    </style>
+    <style name="ActionBarPublicTransport" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/PublicTransportPrimary</item>
+        <item name="background">@color/PublicTransportPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
+    <!-- CALENDAR style -->
+    <style name="AppCalendar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/CalendarPrimary</item>
+        <item name="colorPrimaryDark">@color/CalendarPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarCalendar</item>
+        <item name="android:actionBarStyle">@style/ActionBarCalendar</item>
+    </style>
+    <style name="ActionBarCalendar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/CalendarPrimary</item>
+        <item name="background">@color/CalendarPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
+    <!-- EMERGENCY style -->
+    <style name="AppEmergency" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/EmergencyPrimary</item>
+        <item name="colorPrimaryDark">@color/EmergencyPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarEmergency</item>
+        <item name="android:actionBarStyle">@style/ActionBarEmergency</item>
+    </style>
+    <style name="ActionBarEmergency" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/EmergencyPrimary</item>
+        <item name="background">@color/EmergencyPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
+
+    <style name="ActionBarWhite" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ActionBarBlack" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#000</item>
     </style>
 
 </resources>

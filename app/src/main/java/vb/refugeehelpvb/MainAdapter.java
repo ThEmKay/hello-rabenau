@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,11 +19,13 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
         ImageView mainPhoto;
         TextView mainCategory;
+        TextView mainBaseline;
 
         MainViewHolder(View itemView) {
             super(itemView);
             mainPhoto = (ImageView) itemView.findViewById(R.id.mainPhoto);
             mainCategory = (TextView) itemView.findViewById(R.id.mainCategory);
+            mainBaseline = (TextView) itemView.findViewById(R.id.mainBaseline);
             itemView.setOnClickListener(this);
         }
 
@@ -42,15 +45,21 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     @Override
     public MainViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item_main, parent, false);
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_main_card, parent, false);
         MainViewHolder mainViewHolder = new MainViewHolder(view);
+
         return mainViewHolder;
     }
 
     @Override
     public void onBindViewHolder(MainViewHolder holder, int position) {
+
         holder.mainPhoto.setImageResource(items.get(position).getPhotoId());
         holder.mainCategory.setText(items.get(position).getCategory());
+        holder.mainBaseline.setBackgroundColor(items.get(position).getBaseLineColor());
+
+
     }
 
     @Override

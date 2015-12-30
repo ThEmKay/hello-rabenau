@@ -1,0 +1,69 @@
+{
+  "alsfeld": {
+    "1": [
+      {
+        "id": "1",
+        "title": "Alsfelder Tafel e.V.",
+        "address": "Georg-Dietrich-Bücking Straße 20",
+        "logo": "tafel",
+        "free": true,
+        "postal": "36304",
+        "city": "Alsfeld"
+      },
+      {
+        "id": "2",
+        "title": "Aldi Markt",
+        "address": "An der Au 14",
+        "logo": "aldi_nord",
+        "free": false,
+        "postal": "36304",
+        "city": "Alsfeld"
+      },
+      {
+        "id": "3",
+        "title": "Aldi Markt",
+        "address": "Grünbergerstr. 82",
+        "logo": "aldi_nord",
+        "free": false,
+        "postal": "36304",
+        "city": "Alsfeld"
+      },
+      {
+        "id": "7",
+        "title": "Herkules",
+        "address": "Georg-Dietrich-Bücking-Straße 2",
+        "logo": "herkules",
+        "free": false,
+        "postal": "36304",
+        "city": "Alsfeld"
+      },
+      {
+        "id": "4",
+        "title": "Lidl",
+        "address": "Grünbergerstr. 83",
+        "logo": "lidl",
+        "free": false,
+        "postal": "36304",
+        "city": "Alsfeld"
+      },
+      {
+        "id": "5",
+        "title": "Penny",
+        "address": "Grünbergerstr. 82",
+        "logo": "penny",
+        "free": false,
+        "postal": "36304",
+        "city": "Alsfeld"
+      },
+      {
+        "id": "6",
+        "title": "tegut",
+        "address": "An der Au 10",
+        "logo": "tegut",
+        "free": false,
+        "postal": "36304",
+        "city": "Alsfeld"
+      }
+    ]
+  }
+}

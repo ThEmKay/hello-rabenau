@@ -1,16 +1,38 @@
 package vb.refugeehelpvb;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
-import java.util.ArrayList;
+import org.osmdroid.tileprovider.constants.OpenStreetMapTileProviderConstants;
 
-import static vb.refugeehelpvb.ResourceProvider.translate;
+import java.util.ArrayList;
+import java.util.Locale;
+
+import vb.refugeehelpvb.calendar.CalendarActivity;
+import vb.refugeehelpvb.doctors.DoctorsActivity;
+import vb.refugeehelpvb.emergency.EmergencyActivity;
+import vb.refugeehelpvb.helpers.AppSettings;
+import vb.refugeehelpvb.helpers.DataContainer;
+import vb.refugeehelpvb.helpers.ResourceProvider;
+import vb.refugeehelpvb.places.PlacesActivity;
+import vb.refugeehelpvb.publictransport.PublicTransportActivity;
+
+import static vb.refugeehelpvb.helpers.ResourceProvider.translate;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -26,6 +48,30 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardview);
 
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        // App-Settings laden: Sprache und Hintergrundbild setzen
+        AppSettings.setLanguage(getApplicationContext(), Locale.getDefault().getDisplayLanguage());
+        AppSettings.loadCitySetting(getApplicationContext());
+        //AppSettings.setAppBackground(getApplicationContext());
+
+        Runnable loadData = new Runnable() {
+            @Override
+            public void run() {
+
+                OpenStreetMapTileProviderConstants.setOfflineMapsPath(Environment.getExternalStorageDirectory() + "/osmdroid");
+                OpenStreetMapTileProviderConstants.setCachePath(Environment.getExternalStorageDirectory() + "/osmdroid");
+
+                DataContainer.init(getApplicationContext());
+                DataContainer d = DataContainer.getInstance();
+            }
+        };
+        loadData.run();
+
+
+
+
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
         ResourceProvider.getInstance(getApplicationContext());
@@ -33,11 +79,7 @@ public class MainActivity extends ActionBarActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new MainAdapter(getDataSet());
         mRecyclerView.setAdapter(mAdapter);
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
         ((MainAdapter) mAdapter).setOnItemClickListener(new MainAdapter.MyClickListener() {
 
             @Override
@@ -47,34 +89,72 @@ public class MainActivity extends ActionBarActivity {
                     case 0:
                         startActivity(new Intent(v.getContext(), DoctorsActivity.class));
                         break;
+                    case 1:
+                        startActivity(new Intent(v.getContext(), PlacesActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(v.getContext(), PublicTransportActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(v.getContext(), CalendarActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(v.getContext(), EmergencyActivity.class));
+                        break;
                 }
 
             }
         });
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
     }
 
     private ArrayList<MainContent> getDataSet() {
         ArrayList results = new ArrayList<MainContent>();
 
         MainContent mc = new MainContent();
-        mc.setPhotoId(R.drawable.heartbeat);
-        mc.setCategory(translate(R.string.medical));
+        mc.setPhotoId(R.drawable.ic_medical);
+        mc.setCategory(translate(R.string.title_activity_doctors));
+        mc.setBaselineColor(Color.parseColor("#AA66CC"));
         results.add(mc);
 
         mc = new MainContent();
-        mc.setPhotoId(R.drawable.train);
-        mc.setCategory(translate(R.string.transit));
+        mc.setPhotoId(R.drawable.ic_places);
+        mc.setCategory(translate(R.string.title_activity_places));
+        mc.setBaselineColor(Color.parseColor("#FFBB33"));
         results.add(mc);
 
         mc = new MainContent();
-        mc.setPhotoId(R.drawable.calendar);
-        mc.setCategory(translate(R.string.calendar));
+        mc.setPhotoId(R.drawable.ic_transit);
+        mc.setCategory(translate(R.string.title_activity_public_transport));
+        mc.setBaselineColor(Color.parseColor("#99CC00"));
+        results.add(mc);
+
+        mc = new MainContent();
+        mc.setPhotoId(R.drawable.ic_events);
+        mc.setCategory(translate(R.string.title_activity_calendar));
+        mc.setBaselineColor(getResources().getColor(R.color.CalendarPrimary));
+        results.add(mc);
+
+        mc = new MainContent();
+        mc.setPhotoId(R.drawable.ic_emergency);
+        mc.setCategory(translate(R.string.title_activity_emergency));
+        mc.setBaselineColor(Color.parseColor("#CC0000"));
         results.add(mc);
 
         return results;
     }
 
-    /*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -89,12 +169,13 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
-    */
+
 }

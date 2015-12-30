@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="vb.refugeehelpvb.emergency.EmergencyActivity">
+    <item
+        android:id="@+id/action_doctors_info"
+        android:title=""
+        android:icon="@drawable/ic_info_white_48dp"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

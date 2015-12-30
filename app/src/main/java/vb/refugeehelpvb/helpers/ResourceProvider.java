@@ -1,11 +1,11 @@
-package vb.refugeehelpvb;
+package vb.refugeehelpvb.helpers;
 
 import android.content.Context;
 
 /**
  * Created by Seb on 27.06.2015.
  */
-class ResourceProvider{
+public class ResourceProvider{
 
     private static ResourceProvider rp = null;
 

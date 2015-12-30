@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#fff"
+    android:padding="10dp"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/plaLogo"
+        android:paddingRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plaLogo"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:id="@+id/plaTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plaAddress"
+        android:layout_below="@+id/plaTitle"
+        android:layout_toRightOf="@+id/plaLogo"
+        android:textColor="#333"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plaCity"
+        android:layout_below="@+id/plaAddress"
+        android:layout_toRightOf="@+id/plaLogo"
+        android:textColor="#333"
+        android:textSize="16dp" />
+
+</RelativeLayout>
