@@ -19,8 +19,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.nio.Buffer;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import vb.refugeehelpvb.R;
 import vb.refugeehelpvb.doctors.DoctorsContent;
@@ -29,7 +31,7 @@ import vb.refugeehelpvb.places.PlacesContent;
 /**
  * Created by Seb on 20.12.2015.
  */
-public class DataContainer{
+public class DataContainer extends Cache{
 
     public static String FILE_INTERN_DOCTORS = "doctors.json";
     public static String FILE_INTERN_PLACES = "places.json";
@@ -43,9 +45,7 @@ public class DataContainer{
     private static int placesCategoriesIcons[];
     private static String placesCategoriesLabels[];
 
-    private static JSONObject doctorsJson = null;
-
-    private static JSONObject placesJson = null;
+    private static String cities[];
 
     private static boolean dataInStorage = true;
 
@@ -56,7 +56,7 @@ public class DataContainer{
             co = c;
             FileOutputStream fo;
 
-            // Pruefen, ob die Daten bereits auf dem Geraet gespeichert sind (FALSE Normalerweise nur beim ersten Start der App)
+            // Pruefen, ob die Daten bereits auf dem Geraet gespeichert sind (FALSE normalerweise nur beim ersten Start der App)
             File file = new File(co.getFilesDir().getAbsolutePath() + "/" + FILE_INTERN_SIGNATURE);
 
             if(!file.exists()){
@@ -67,10 +67,6 @@ public class DataContainer{
                     saveInternal(FILE_INTERN_PLACES);
                 }catch(Exception e){}
             }
-
-            readSrcSignature();
-            readDoctorsJson();
-            readPlacesJson();
 
             int i = 0;
             placesCategoriesIcons = new int[7];
@@ -84,14 +80,20 @@ public class DataContainer{
 
             placesCategoriesLabels = c.getResources().getStringArray(R.array.places);
 
+            cities = c.getResources().getStringArray(R.array.cities);
+
+            readSrcSignature();
+            readDoctorsJson();
+            readPlacesJson();
 
         }
     }
 
     public static void refresh(){
         d.readDoctorsJson();
+        d.readPlacesJson();
+
         Log.i("UPDATE", "CONTAINER aktualisiert");
-        System.out.println(dataInStorage);
     }
 
     public static DataContainer getInstance(){
@@ -105,23 +107,25 @@ public class DataContainer{
         AppSettings.sourceSignature = Integer.parseInt(loadFromInternal(FILE_INTERN_SIGNATURE));
     }
 
+    /**
+     * Auslesen der Doktoren - JSON Daten
+     */
     private static void readDoctorsJson(){
-
+        JSONObject doctorsJson;
         try{
             if(dataInStorage){
                 // Falls die Daten bereits im Geraete-Storage gespeichert sind, direkt aus dieser Quelle laden
-
-                doctorsJson = new JSONObject(loadFromInternal(FILE_INTERN_DOCTORS));
-
+                //doctorsJson = new JSONObject(loadFromInternal(FILE_INTERN_DOCTORS));
+                doctorsJson = new JSONObject(saveInternal(FILE_INTERN_DOCTORS));
                 Log.i("DOCTORS JSON", "Aus internem Speicher laden");
-
-                System.out.println(doctorsJson);
 
             }else{
                 // Falls die Daten nicht im Storage sind, werden diese jetzt gespeichert (nur beim erstmaligen Ausfuehren)
                 // Dabei kommen die Anfangsdaten aus dem bei Installation enthaltenen Datenbestand
                 doctorsJson = new JSONObject(saveInternal(FILE_INTERN_DOCTORS));
             }
+            // Caching der Doktoren-Daten (JSON wird so nur einmalig gelesen)
+            cacheDoctors(doctorsJson, cities, co);
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -130,11 +134,25 @@ public class DataContainer{
         }
     }
 
+    /**
+     * Auslesen der Orte - JSON Daten
+     */
     private static void readPlacesJson(){
 
         try{
 
-            placesJson = new JSONObject(saveInternal(FILE_INTERN_PLACES));
+            JSONObject placesJson = new JSONObject(saveInternal(FILE_INTERN_PLACES));
+
+            String mockCities[] = new String[1];
+            mockCities[0] = "alsfeld";
+
+            String mockCategories[] = new String[1];
+            mockCategories[0] = "1";
+
+            // Caching der Doktoren-Daten (JSON wird so nur einmalig gelesen)
+            cachePlaces(placesJson, mockCities, mockCategories, co);
+
+
             /*
             if(dataInStorage){
                 // Falls die Daten bereits im Geraete-Storage gespeichert sind, direkt aus dieser Quelle laden
@@ -202,90 +220,27 @@ public class DataContainer{
         return finalString.toString();
     }
 
-    public ArrayList<DoctorsContent> getDoctors(String city){
-
-        ArrayList<DoctorsContent> data = new ArrayList<DoctorsContent>();
-
-        try {
-            JSONArray docs = doctorsJson.getJSONArray(city.toLowerCase());
-
-            // Alle Doktoren auslesen
-            DoctorsContent doc;
-            JSONObject d;
-            for(int i = 0; i < docs.length(); i++){
-                d = docs.getJSONObject(i);
-
-                doc = new DoctorsContent();
-                doc.name = d.getString("title");
-                doc.adress = d.getString("address");
-                doc.city = d.getString("location");
-                doc.id = d.getString("id");
-
-                String uri;
-                JSONArray lang = d.getJSONArray("languages");
-                if(lang.length() == 1){
-                    uri = "@drawable/"+lang.getString(0);
-                    doc.lang1 = co.getResources().getIdentifier(uri, null, co.getPackageName());
-                }else if(lang.length() == 2){
-                    uri = "@drawable/"+lang.getString(0);
-                    doc.lang1 = co.getResources().getIdentifier(uri, null, co.getPackageName());
-                    uri = "@drawable/"+lang.getString(1);
-                    doc.lang2 = co.getResources().getIdentifier(uri, null, co.getPackageName());
-                }else if(lang.length() == 3){
-                    uri = "@drawable/"+lang.getString(0);
-                    doc.lang1 = co.getResources().getIdentifier(uri, null, co.getPackageName());
-                    uri = "@drawable/"+lang.getString(1);
-                    doc.lang2 = co.getResources().getIdentifier(uri, null, co.getPackageName());
-                    uri = "@drawable/"+lang.getString(2);
-                    doc.lang3 = co.getResources().getIdentifier(uri, null, co.getPackageName());
-                }
-
-                data.add(doc);
-            }
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(co, R.string.error_read_json, Toast.LENGTH_LONG).show();
-        }
-
-        return data;
-
+    /**
+     * Rückgabe der Doktoren einer gewahelten Stadt/Gemeinde aus dem Cache
+     *
+     * @param city
+     * @return ArrayList
+     */
+    public ArrayList<DoctorsContent> getDoctors(String city) {
+        return doctorsCache.get(city);
     }
 
-
-    public ArrayList<PlacesContent> getPlaces(String city, int category){
-
-        ArrayList<PlacesContent> data = new ArrayList<PlacesContent>();
-
-        System.out.println(placesJson);
-
-        try {
-            JSONArray places = placesJson.getJSONObject(city.toLowerCase()).getJSONArray(Integer.toString(category));
-
-            // Alle Adressen auslesen
-            PlacesContent pla;
-            JSONObject p;
-            for(int i = 0; i < places.length(); i++){
-                p = places.getJSONObject(i);
-
-                pla = new PlacesContent();
-                pla.title = p.getString("title");
-                pla.address = p.getString("address");
-                pla.city = p.getString("city");
-                pla.logo = p.getString("logo");
-
-                data.add(pla);
-            }
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(co, R.string.error_read_json, Toast.LENGTH_LONG).show();
-        }
-
-        return data;
-
+    /**
+     * Rückgabe der Orte einer gewahelten Stadt/Gemeinde aus dem Cache
+     *
+     * @param city
+     * @param category
+     * @return ArrayList
+     */
+    public ArrayList<PlacesContent> getPlacesCache(String city, String category){
+        //return placesCache.get("alsfeld").get("1");
+        return placesCache.get(city).get(category);
     }
-
 
     public int[] getPlacesCategoriesIcons(){
         return placesCategoriesIcons;

@@ -1,5 +1,7 @@
 package vb.refugeehelpvb.doctors;
 
+import org.json.JSONArray;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +14,7 @@ public class DoctorsContent {
     public String adress;
     public String city;
     public String id;
+    public JSONArray openHours = null;
     public int lang1 = 0;
     public int lang2 = 0;
     public int lang3 = 0;

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -53,7 +54,14 @@ public class PlacesCategoryActivity extends ActionBarActivity {
                 // Liste saeubern
                 data.clear();
                 // Neue Daten gemaess der Auswahl zur Liste hinzufuegen
-                data.addAll(DataContainer.getInstance().getPlaces(parent.getSelectedItem().toString().toLowerCase(), categoryId));
+                //data.addAll(DataContainer.getInstance().getPlaces(parent.getSelectedItem().toString().toLowerCase(), categoryId));
+                try {
+                    data.addAll(DataContainer.getInstance().getPlacesCache(parent.getSelectedItem().toString().toLowerCase(), Integer.toString(categoryId)));
+                }catch(NullPointerException e){
+                    Toast.makeText(parent.getContext(), "Keine Daten vorhanden", Toast.LENGTH_LONG).show();
+                }
+
+
                 // Adapter aktualisiern
                 adp.notifyDataSetChanged();
             }

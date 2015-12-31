@@ -11,9 +11,11 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.identity.intents.AddressConstants;
 import com.google.android.gms.maps.model.TileProvider;
 import com.google.android.gms.wearable.Asset;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.osmdroid.DefaultResourceProxyImpl;
 import org.osmdroid.ResourceProxy;
@@ -94,18 +96,23 @@ public class DoctorsDetails extends AppCompatActivity {
          //displaying the MapView
         mapView.setMaxZoomLevel(16);
         mapView.setMinZoomLevel(16);
-        mapView.setTileSource(new XYTileSource("MapquestOSM", 0, 18, 256, ".png", new String[] {}));
+        mapView.setTileSource(new XYTileSource("MapquestOSM", 0, 18, 256, ".png", new String[]{}));
 
         mapView.getController().setZoom(16); //set initial zoom-level, depends on your need
-        mapView.getController().setCenter(new GeoPoint(50.755360, 9.2578943));
+        mapView.getController().setCenter(new GeoPoint(50.7507624,9.265958));
+
+
+
         mapView.setUseDataConnection(false);
         mapView.setMultiTouchControls(true);
         //setContentView(mapView);
-        /*
+
 
         ArrayList<OverlayItem> items = new ArrayList<OverlayItem>();
         // Put overlay icon a little way from map centre
-        items.add(new OverlayItem("Here", "SampleDescription", new GeoPoint(50.755360, 9.2578943)));
+        OverlayItem flag = new OverlayItem("Here", "SampleDescription", new GeoPoint(50.7507624,9.265958));
+        flag.setMarker(getResources().getDrawable(R.drawable.ic_destination));
+        items.add(flag);
 
         final ResourceProxy mResourceProxy = new DefaultResourceProxyImpl(getApplicationContext());
 
@@ -128,7 +135,7 @@ public class DoctorsDetails extends AppCompatActivity {
 
         mapView.getOverlays().add(mMyLocationOverlay);
         mapView.invalidate();
-        */
+
 
 
 
@@ -137,6 +144,20 @@ public class DoctorsDetails extends AppCompatActivity {
         ArrayList<DoctorsContent> docs = DataContainer.getInstance().getDoctors(getIntent().getStringExtra("city"));
 
         DoctorsContent doc = docs.get(docId - 1);
+
+        System.out.println(doc.openHours);
+
+        if(doc.openHours != null){
+            for(int i = 0; i < doc.openHours.length(); i++){
+                try {
+                    System.out.println(doc.openHours.get(i));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+        }
 
         getSupportActionBar().setTitle(doc.getName());
 

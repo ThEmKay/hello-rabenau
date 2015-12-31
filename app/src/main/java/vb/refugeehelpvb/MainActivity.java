@@ -64,12 +64,13 @@ public class MainActivity extends ActionBarActivity {
                 OpenStreetMapTileProviderConstants.setCachePath(Environment.getExternalStorageDirectory() + "/osmdroid");
 
                 DataContainer.init(getApplicationContext());
-                DataContainer d = DataContainer.getInstance();
             }
         };
         loadData.run();
 
 
+
+        //System.out.println(DataContainer.getInstance().getCachedDocs("alsfeld").size());
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -102,10 +103,8 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(new Intent(v.getContext(), EmergencyActivity.class));
                         break;
                 }
-
             }
         });
-
     }
 
     @Override

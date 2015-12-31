@@ -1,31 +1,31 @@
-{
-  "alsfeld":
-  [
-    { "id":"1",
-      "title":"Jochen Müller",
-      "address":"Alicestr. 17",
-      "postal":"36304",
-      "location":"Alsfeld",
-      "languages":["uk", "ru", "fr"]},
-    { "id":"2",
-      "title":"Dr.med. Kolb-Fricke, Hans-Walter Müller",
-      "address":"Lutherstr. 8",
-      "postal":"36304",
-      "location":"Alsfeld",
-      "languages":["uk"]},
-    { "id":"3",
-      "title":"Dr.med. Birgit Amthauer",
-      "address":"Jahnstra. 7",
-      "postal":"36304",
-      "location":"Alsfeld",
-      "languages":["uk"]},
-    { "id":"4",
-      "title":"Mach, Erhardt-Gerst",
-      "address":"Schwabenröder Str. 4",
-      "postal":"36304",
-      "location":"Alsfeld",
-      "languages":["uk"]}
-  ],
+{"alsfeld":
+[
+  { "id":"1",
+    "title":"Jochen MÃ¼ller",
+    "address":"Alicestr. 17",
+    "postal":"36304",
+    "location":"Alsfeld",
+    "openhours":["08:00 - 12:00 & 17:30 - 1830", "08:00 - 12:00", "-", "08:00 - 12:00 & 17:30 - 18:30", "08:00 - 12:00"],
+    "languages":["uk", "ru", "fr"]},
+  { "id":"2",
+    "title":"Dr.med. Kolb-Fricke, Hans-Walter MÃ¼ller",
+    "address":"Lutherstr. 8",
+    "postal":"36304",
+    "location":"Alsfeld",
+    "languages":["uk","fr"]},
+  { "id":"3",
+    "title":"Dr.med. Birgit Amthauer",
+    "address":"Jahnstra. 7",
+    "postal":"36304",
+    "location":"Alsfeld",
+    "languages":["uk"]},
+  { "id":"4",
+    "title":"Mach, Erhardt-Gerst",
+    "address":"SchwabenrÃ¶der Str. 4",
+    "postal":"36304",
+    "location":"Alsfeld",
+    "languages":["uk"]}
+],
   "lauterbach":
   [
     { "id":"1",
@@ -53,7 +53,7 @@
       "location":"Lauterbach",
       "languages":["uk"]},
     { "id":"5",
-      "title":"Thomas Götz",
+      "title":"Thomas GÃ¶tz",
       "address":"Vogelsbergstr. 44",
       "postal":"36341",
       "location":"Lauterbach",
@@ -66,9 +66,17 @@
       "languages":["uk"]},
     { "id":"7",
       "title":"Joachim Lang",
-      "address":"Adolf-Spieß-Str. 10",
+      "address":"Adolf-SpieÃŸ-Str. 10",
       "postal":"36341",
       "location":"Lauterbach",
       "languages":["uk"]}
+  ],
+  "romrod":[{
+    "id":"1",
+    "title":"Hausarztzentrum",
+    "address":"Schillerstr. 3",
+    "postal":"36329",
+    "location":"Romrod",
+    "languages":["uk"]}
   ]
 }
