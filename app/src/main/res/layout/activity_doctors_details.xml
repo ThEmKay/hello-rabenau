@@ -5,144 +5,207 @@
     android:layout_height="fill_parent"
     android:background="#fff" >
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
 
-        <TextView
-            android:id="@+id/lblOpenhours"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="@string/label_openhours"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:textColor="@color/label"/>
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
 
-        <!-- MONTAG -->
-        <ImageView
-            android:id="@+id/imgMonday"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@id/lblOpenhours"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/ic_monday" />
-        <TextView
-            android:id="@+id/timeMonday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8:00 - 14:00 Uhr"
-            android:layout_below="@id/lblOpenhours"
-            android:layout_toRightOf="@id/imgMonday"
-            android:textSize="16dp"
-            android:padding="2dp"
-            android:textColor="#000" />
+            <!-- ADRESSE -->
+            <TextView
+                android:id="@+id/lblAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/label_address"
+                android:textColor="@color/label"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblAddress"
+                android:layout_alignParentLeft="true"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000" />
 
-        <!-- DIENSTAG -->
-        <ImageView
-            android:id="@+id/imgTuesday"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@id/imgMonday"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/ic_tuesday" />
-        <TextView
-            android:id="@+id/timeTuesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8:00 - 14:00 Uhr"
-            android:layout_below="@id/imgMonday"
-            android:layout_toRightOf="@id/imgTuesday"
-            android:textSize="16dp"
-            android:padding="2dp"
-            android:textColor="#000" />
+            <!-- OEFFNUNGSZEITEN -->
+            <TextView
+                android:id="@+id/lblOpenhours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/label_openhours"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtAddress"
+                android:textColor="@color/label"/>
 
-        <!-- MITTWOCH -->
-        <ImageView
-            android:id="@+id/imgWednesday"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@id/imgTuesday"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/ic_wednesday" />
-        <TextView
-            android:id="@+id/timeWednesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8:00 - 14:00 Uhr"
-            android:layout_below="@id/imgTuesday"
-            android:layout_toRightOf="@id/imgWednesday"
-            android:textSize="16dp"
-            android:padding="2dp"
-            android:textColor="#000" />
+            <!-- MONTAG -->
+            <ImageView
+                android:id="@+id/imgMonday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/lblOpenhours"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_monday" />
+            <TextView
+                android:id="@+id/timeMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/lblOpenhours"
+                android:layout_toRightOf="@id/imgMonday"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:textColor="#000" />
 
-        <!-- DONNERSTAG -->
-        <ImageView
-            android:id="@+id/imgThursday"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@id/imgWednesday"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/ic_thursday" />
-        <TextView
-            android:id="@+id/timeThursday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8:00 - 14:00 Uhr"
-            android:layout_below="@id/imgWednesday"
-            android:layout_toRightOf="@id/imgThursday"
-            android:textSize="16dp"
-            android:padding="2dp"
-            android:textColor="#000" />
+            <!-- DIENSTAG -->
+            <ImageView
+                android:id="@+id/imgTuesday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/imgMonday"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_tuesday" />
+            <TextView
+                android:id="@+id/timeTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/imgMonday"
+                android:layout_toRightOf="@id/imgTuesday"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:textColor="#000" />
 
-        <!-- FREITAG -->
-        <ImageView
-            android:id="@+id/imgFriday"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@id/imgThursday"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/ic_friday" />
-        <TextView
-            android:id="@+id/timeFriday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8:00 - 14:00 Uhr"
-            android:layout_below="@id/imgThursday"
-            android:layout_toRightOf="@id/imgFriday"
-            android:textSize="16dp"
-            android:padding="2dp"
-            android:textColor="#000" />
+            <!-- MITTWOCH -->
+            <ImageView
+                android:id="@+id/imgWednesday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/imgTuesday"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_wednesday" />
+            <TextView
+                android:id="@+id/timeWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/imgTuesday"
+                android:layout_toRightOf="@id/imgWednesday"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:textColor="#000" />
 
-        <!-- SPRACHEN -->
-        <TextView
-            android:id="@+id/lblLangs"
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="@string/label_spokenlangs"
-            android:textColor="@color/label"
-            android:layout_below="@id/imgFriday"
-            android:layout_alignParentLeft="true" />
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/uk"
-            android:layout_below="@id/lblLangs" />
+            <!-- DONNERSTAG -->
+            <ImageView
+                android:id="@+id/imgThursday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/imgWednesday"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_thursday" />
+            <TextView
+                android:id="@+id/timeThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/imgWednesday"
+                android:layout_toRightOf="@id/imgThursday"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:textColor="#000" />
 
-    </RelativeLayout>
+            <!-- FREITAG -->
+            <ImageView
+                android:id="@+id/imgFriday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/imgThursday"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_friday" />
+            <TextView
+                android:id="@+id/timeFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/imgThursday"
+                android:layout_toRightOf="@id/imgFriday"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:textColor="#000" />
+
+            <!-- SPRACHEN -->
+            <TextView
+                android:id="@+id/lblLangs"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/label_spokenlangs"
+                android:textColor="@color/label"
+                android:layout_below="@id/imgFriday"
+                android:layout_alignParentLeft="true" />
+            <ImageView
+                android:id="@+id/imgLanguage1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:layout_below="@id/lblLangs" />
+            <ImageView
+                android:id="@+id/imgLanguage2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/imgLanguage1"
+                android:layout_below="@id/lblLangs" />
+            <ImageView
+                android:id="@+id/imgLanguage3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/imgLanguage2"
+                android:layout_below="@id/lblLangs" />
+
+            <!-- TELEFON -->
+            <TextView
+                android:id="@+id/lblTel"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/label_contact"
+                android:textColor="@color/label"
+                android:layout_below="@id/imgLanguage1"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblTel"
+                android:layout_alignParentLeft="true"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
     <!-- KARTE -->
     <org.osmdroid.views.MapView
+        android:layout_marginTop="5dp"
         android:id="@+id/mapview"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true" />
 
 </LinearLayout>

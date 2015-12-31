@@ -24,4 +24,7 @@
     <string name="label_address">Adresse</string>
     <string name="label_openhours">Öffnungszeiten</string>
     <string name="label_spokenlangs">Gesprochene Sprachen</string>
+    <string name="closed">Geschlossen</string>
+    <string name="label_contact">Kontakt</string>
+    <string name="closed_holiday">Geschlossen (Feiertag)</string>
 </resources>

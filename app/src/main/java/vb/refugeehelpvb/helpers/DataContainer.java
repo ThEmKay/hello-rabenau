@@ -47,6 +47,15 @@ public class DataContainer extends Cache{
 
     private static String cities[];
 
+    // #################################
+    // #################################
+    // #################################
+    // DIE FEIERTAGE SOLLTEN HIER WEG - ANDERE KLASSE
+    public static int holidays[][] = new int[1][2];
+    // #################################
+    // #################################
+    // #################################
+
     private static boolean dataInStorage = true;
 
     private DataContainer(){}
@@ -99,6 +108,13 @@ public class DataContainer extends Cache{
     public static DataContainer getInstance(){
         if(d == null){
             d = new DataContainer();
+
+            // #################################
+            // #################################
+            // #################################
+            // DIE FEIERTAGE SOLLTEN HIER WEG - ANDERE KLASSE
+            d.holidays[0][0] = 1;
+            d.holidays[0][1] = 1;
         }
         return d;
     }

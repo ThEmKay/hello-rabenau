@@ -15,9 +15,11 @@ public class DoctorsContent {
     public String city;
     public String id;
     public JSONArray openHours = null;
+    public String phone = null;
     public int lang1 = 0;
     public int lang2 = 0;
     public int lang3 = 0;
+    public double geo[] = null;
 
 
     public String getName(){

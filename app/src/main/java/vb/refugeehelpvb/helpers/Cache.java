@@ -52,6 +52,15 @@ public class Cache {
                     if(!d.isNull("openhours")){
                         doc.openHours = d.getJSONArray("openhours");
                     }
+                    if(!d.isNull("phone")){
+                        doc.phone = d.getString("phone");
+                    }
+                    if(!d.isNull("geo")){
+                        doc.geo = new double[2];
+                        JSONArray a = d.getJSONArray("geo");
+                        doc.geo[0] = a.getDouble(0);
+                        doc.geo[1] = a.getDouble(1);
+                    }
 
                     String uri;
                     JSONArray lang = d.getJSONArray("languages");
