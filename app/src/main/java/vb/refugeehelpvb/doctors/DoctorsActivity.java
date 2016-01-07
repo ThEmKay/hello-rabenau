@@ -12,8 +12,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import vb.refugeehelpvb.MainActivity;
 import vb.refugeehelpvb.R;
+import vb.refugeehelpvb.StartupActivity;
 import vb.refugeehelpvb.helpers.DataContainer;
+import vb.refugeehelpvb.helpers.Observer;
 
 import static vb.refugeehelpvb.helpers.CitySpinner.createCitySpinner;
 
@@ -34,12 +37,24 @@ public class DoctorsActivity extends AppCompatActivity {
     // ListView Adapter
     private DoctorsAdapter adp;
 
+
+
     /*
      * Einstiegspunkt dieser Activity
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Wenn die App eine Zeit inaktiv war, ist die Activity wahrscheinlich zerstoert worden und wird
+        // vom System wiederhergestellt. Dann sind jedoch die zum Anwendungsstart geladenen Daten nicht mehr
+        // verfuegbar. Deshalb wird direkt zum Einstiegspunkt der App weitergeleitet.
+        if(savedInstanceState != null){
+            System.out.println(savedInstanceState.isEmpty());
+            startActivity(new Intent(getApplicationContext(), StartupActivity.class));
+            onStop();
+        }
+
         setContentView(R.layout.activity_doctors);
 
         // ListView Element wird aus dem Layout geholt
@@ -58,11 +73,17 @@ public class DoctorsActivity extends AppCompatActivity {
         selCity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
                 // Wenn ein neuer Ort ausgewaehlt wird, muessen neue Daten in die ListView geladen werden
                 // Liste saeubern
                 data.clear();
                 // Neue Daten gemaess der Auswahl zur Liste hinzufuegen
-                data.addAll(DataContainer.getInstance().getDoctors(parent.getSelectedItem().toString().toLowerCase()));
+                if(Observer.previousSelectedCity.equals("")) {
+                    data.addAll(DataContainer.getInstance().getDoctors(parent.getSelectedItem().toString().toLowerCase()));
+                }else{
+                    data.addAll(DataContainer.getInstance().getDoctors(Observer.previousSelectedCity));
+                    Observer.previousSelectedCity = "";
+                }
                 // Adapter aktualisiern
                 adp.notifyDataSetChanged();
             }
@@ -81,6 +102,7 @@ public class DoctorsActivity extends AppCompatActivity {
                 // Parameter an neues Intent haengen
                 details.putExtra("id", Integer.parseInt(hidden.getText().toString()));
                 details.putExtra("city", selCity.getSelectedItem().toString().toLowerCase());
+                Observer.previousSelectedCity = selCity.getSelectedItem().toString().toLowerCase();
                 // Starten
                 startActivity(details);
             }

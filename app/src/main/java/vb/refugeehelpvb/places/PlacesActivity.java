@@ -16,6 +16,7 @@ import java.util.HashMap;
 
 import vb.refugeehelpvb.R;
 import vb.refugeehelpvb.helpers.DataContainer;
+import vb.refugeehelpvb.helpers.Observer;
 
 import static vb.refugeehelpvb.helpers.CitySpinner.createCitySpinner;
 
@@ -37,8 +38,9 @@ public class PlacesActivity extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Intent cat = new Intent(getApplicationContext(), PlacesCategoryActivity.class);
-                    cat.putExtra("categoryId", position+1);
-                    cat.putExtra("categoryLabel", labels[position]);
+                    //cat.putExtra("categoryId", position+1);
+                    Observer.PlacesCategory = Integer.toString(position+1);
+                    Observer.PlacesCategoryLabel = labels[position];
 
                     startActivity(cat);
                 }

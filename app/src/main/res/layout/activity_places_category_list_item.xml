@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:background="#fff"
     android:padding="10dp"
     android:layout_height="fill_parent">
 
@@ -25,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/plaAddress"
+        android:paddingRight="40dp"
         android:layout_below="@+id/plaTitle"
         android:layout_toRightOf="@+id/plaLogo"
         android:textColor="#333"
@@ -38,5 +38,14 @@
         android:layout_toRightOf="@+id/plaLogo"
         android:textColor="#333"
         android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imgFree"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:src="@drawable/ic_pic_free" />
 
 </RelativeLayout>

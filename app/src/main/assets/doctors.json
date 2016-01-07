@@ -1,8 +1,8 @@
 {"alsfeld":
 [
   { "id":"1",
-    "title":"Jochen MÃ¼ller",
-    "address":"Alicestr. 17",
+    "title":"Jochen Müller",
+    "address":"Alicestaße 17",
     "postal":"36304",
     "location":"Alsfeld",
     "phone":"(06631) 53 59",
@@ -10,14 +10,14 @@
     "openhours":["08:00 - 12:00 & 17:30 - 18:30", "08:00 - 12:00", "-", "08:00 - 12:00 & 17:30 - 18:30", "08:00 - 12:00"],
     "languages":["uk", "ru", "fr"]},
   { "id":"2",
-    "title":"Dr.med. Kolb-Fricke, Hans-Walter MÃ¼ller",
-    "address":"Lutherstr. 8",
+    "title":"Dr.med. Kolb-Fricke, Hans-Walter Müller",
+    "address":"Lutherstraße 8",
     "postal":"36304",
     "location":"Alsfeld",
     "languages":["uk","fr"]},
   { "id":"3",
     "title":"Dr.med. Birgit Amthauer",
-    "address":"Jahnstr. 7",
+    "address":"Jahnstraße 7",
     "postal":"36304",
     "location":"Alsfeld",
     "phone": "(06631) 35 28",
@@ -26,7 +26,7 @@
     "languages":["uk"]},
   { "id":"4",
     "title":"Mach, Erhardt-Gerst",
-    "address":"SchwabenrÃ¶der Str. 4",
+    "address":"Schwabenröder Straße 4",
     "postal":"36304",
     "location":"Alsfeld",
     "languages":["uk"]}
@@ -38,6 +38,7 @@
       "address":"Goldhelg 44",
       "postal":"36341",
       "location":"Lauterbach",
+      "geo":[50.6417694, 9.4003863],
       "languages":["uk"]},
     { "id":"2",
       "title":"Drs.med. Schneider",
@@ -71,7 +72,7 @@
       "languages":["uk"]},
     { "id":"7",
       "title":"Joachim Lang",
-      "address":"Adolf-SpieÃŸ-Str. 10",
+      "address":"Adolf-Spieß-Straße 10",
       "postal":"36341",
       "location":"Lauterbach",
       "languages":["uk"]}
@@ -79,7 +80,7 @@
   "romrod":[{
     "id":"1",
     "title":"Hausarztzentrum",
-    "address":"Schillerstr. 3",
+    "address":"Schillerstraße 3",
     "postal":"36329",
     "location":"Romrod",
     "languages":["uk"]}

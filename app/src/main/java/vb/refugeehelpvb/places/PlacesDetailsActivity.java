@@ -1,10 +1,10 @@
-package vb.refugeehelpvb.doctors;
+package vb.refugeehelpvb.places;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,60 +18,38 @@ import vb.refugeehelpvb.R;
 import vb.refugeehelpvb.helpers.DataContainer;
 import vb.refugeehelpvb.helpers.DateTime;
 import vb.refugeehelpvb.helpers.MapBuilder;
+import vb.refugeehelpvb.helpers.Observer;
 
 /**
- * Detailansicht der Doktoren. Enthaelt alle relevanten Daten inkl. Oeffnungszeiten
- * und Offline-Faehige Karte mit der markierten Position der Praxis.
+ * Detailansicht der Orte mit allen relevanten Daten inkl. Oeffnungszeiten und Karte
  *
  * @author Seb
- *
  */
-public class DoctorsDetails extends AppCompatActivity {
+public class PlacesDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctors_details);
-
-
+        setContentView(R.layout.activity_places_details);
 
         // ##################
-        // Datensatz des ausgewaehlten Doktors aus dem Cache holen
-        int docId = getIntent().getIntExtra("id", 1);
-        ArrayList<DoctorsContent> docs = DataContainer.getInstance().getDoctors(getIntent().getStringExtra("city"));
-        DoctorsContent doc = docs.get(docId - 1);
+        // Datensatz des ausgewaehlten Ortes aus dem Cache holen
+        Intent in = getIntent();
+        ArrayList<PlacesContent> places = DataContainer.getInstance().getPlacesCache(in.getStringExtra("city"), Observer.PlacesCategory);
+        PlacesContent place = places.get(in.getIntExtra("placeId", 1) - 1);
 
         // ##################
-        // Titel der Activity = Name der Arztpraxis
-        getSupportActionBar().setTitle(doc.getName());
+        // Titel der Activity gleich Bezeichnung des Ortes setzen
+        setTitle(place.title);
 
         // ##################
         // Adresse setzen
-        TextView address = (TextView) findViewById(R.id.txtAddress);
-        address.setText(doc.adress+" "+doc.city);
-
-        // ##################
-        // Icons fuer die gesprochenen Sprachen hinzufügen
-        ImageView tempImg;
-        if(doc.lang1 != 0){
-            tempImg = (ImageView) findViewById(R.id.imgLanguage1);
-            tempImg.setImageResource(doc.lang1);
-            tempImg.setVisibility(View.VISIBLE);
-        }
-        if(doc.lang2 != 0){
-            tempImg = (ImageView) findViewById(R.id.imgLanguage2);
-            tempImg.setImageResource(doc.lang2);
-            tempImg.setVisibility(View.VISIBLE);
-        }
-        if(doc.lang3 != 0){
-            tempImg = (ImageView) findViewById(R.id.imgLanguage3);
-            tempImg.setImageResource(doc.lang3);
-            tempImg.setVisibility(View.VISIBLE);
-        }
+        TextView plaAddress = (TextView) findViewById(R.id.txtAddress);
+        plaAddress.setText(place.address + " " + place.city);
 
         // ##################
         // Container fuer die Wochentage holen
-        TextView oH[] = new TextView[5];
+        TextView oH[] = new TextView[6];
         TextView temp = (TextView) findViewById(R.id.timeMonday);
         oH[0] = temp;
         temp = (TextView) findViewById(R.id.timeTuesday);
@@ -82,6 +60,8 @@ public class DoctorsDetails extends AppCompatActivity {
         oH[3] = temp;
         temp = (TextView) findViewById(R.id.timeFriday);
         oH[4] = temp;
+        temp = (TextView) findViewById(R.id.timeSaturday);
+        oH[5] = temp;
 
         // Kalendertag ermitteln
         Calendar cal = Calendar.getInstance();
@@ -92,11 +72,11 @@ public class DoctorsDetails extends AppCompatActivity {
         ImageView img;
         String hrs;
         // Wenn Oeffnungszeiten angegeben sind
-        if(doc.openHours != null){
+        if(place.openHours != null){
             // Alle durchlaufen (i.d.R. 5 =] )
-            for(int i = 0; i < doc.openHours.length(); i++){
+            for(int i = 0; i < place.openHours.length(); i++){
                 try {
-                    hrs = doc.openHours.getString(i);
+                    hrs = place.openHours.getString(i);
                     // Ist ein Tag mit geschlossen markiert ODER
                     // ist der Tag HEUTE
                     if(hrs.equals("-") || (day-2 == i && holiday)){
@@ -116,7 +96,7 @@ public class DoctorsDetails extends AppCompatActivity {
                             oH[i].setText(R.string.closed);
                         }
                     }else{
-                        oH[i].setText(doc.openHours.getString(i));
+                        oH[i].setText(place.openHours.getString(i));
                         // Wenn HEUTE und KEIN Feiertag sowie NICHT geschlossen, fett markieren und GRUEN hervorheben
                         if(day-2 == i){
                             oH[i].setTextColor(getResources().getColor(R.color.green));
@@ -130,22 +110,10 @@ public class DoctorsDetails extends AppCompatActivity {
         }
 
         // ##################
-        // Telefonnummer setzen
-        if(doc.phone != null){
-            try{
-                TextView phone = (TextView) findViewById(R.id.txtPhone);
-                phone.setText(doc.phone);
-            }catch(Exception e){}
-        }
-
-        // ##################
-        // Map ins Layout zaubern :)
-        ViewGroup layout = (ViewGroup) findViewById(R.id.layoutDoctorsDetails);
+        // Map einzeichnen
+        ViewGroup layout = (ViewGroup) findViewById(R.id.layoutPlacesDetails);
         MapBuilder map = new MapBuilder(getApplicationContext());
-        if(doc.geo != null){
-            map.setGeoPoint(doc.geo[0], doc.geo[1]);
-            map.centerMap(doc.geo[0], doc.geo[1]);
-        }
+        map.setGeoPoint(50.7507624,9.265958);
         layout.addView(map.drawMap());
 
     }

@@ -47,15 +47,6 @@ public class DataContainer extends Cache{
 
     private static String cities[];
 
-    // #################################
-    // #################################
-    // #################################
-    // DIE FEIERTAGE SOLLTEN HIER WEG - ANDERE KLASSE
-    public static int holidays[][] = new int[1][2];
-    // #################################
-    // #################################
-    // #################################
-
     private static boolean dataInStorage = true;
 
     private DataContainer(){}
@@ -81,7 +72,7 @@ public class DataContainer extends Cache{
             placesCategoriesIcons = new int[7];
             placesCategoriesIcons[i] = R.drawable.ic_dining;
             placesCategoriesIcons[++i] = R.drawable.ic_clothes;
-            placesCategoriesIcons[++i] = R.drawable.ic_local_pharmacy_black_48dp;
+            placesCategoriesIcons[++i] = R.drawable.ic_pharmacy;
             placesCategoriesIcons[++i] = R.drawable.ic_education;
             placesCategoriesIcons[++i] = R.drawable.ic_sports;
             placesCategoriesIcons[++i] = R.drawable.ic_playground;
@@ -108,13 +99,6 @@ public class DataContainer extends Cache{
     public static DataContainer getInstance(){
         if(d == null){
             d = new DataContainer();
-
-            // #################################
-            // #################################
-            // #################################
-            // DIE FEIERTAGE SOLLTEN HIER WEG - ANDERE KLASSE
-            d.holidays[0][0] = 1;
-            d.holidays[0][1] = 1;
         }
         return d;
     }
@@ -162,8 +146,11 @@ public class DataContainer extends Cache{
             String mockCities[] = new String[1];
             mockCities[0] = "alsfeld";
 
-            String mockCategories[] = new String[1];
+            String mockCategories[] = new String[4];
             mockCategories[0] = "1";
+            mockCategories[1] = "2";
+            mockCategories[2] = "3";
+            mockCategories[3] = "4";
 
             // Caching der Doktoren-Daten (JSON wird so nur einmalig gelesen)
             cachePlaces(placesJson, mockCities, mockCategories, co);

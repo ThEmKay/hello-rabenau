@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_startup"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/startupLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:alpha="0.7"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/startupProgress"/>
+
+    <TextView
+        android:id="@+id/startupTitleArab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/startupLogo"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:text="مرحبا" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        android:layout_above="@id/startupTitleArab"
+        android:textColor="@color/white"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/startupLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:text="Lade Daten"/>
+
+    <ProgressBar
+        android:id="@+id/startupProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@id/startupLoading"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+
+</RelativeLayout>
+
+
+
+

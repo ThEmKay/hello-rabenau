@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="vb.refugeehelpvb"
     android:versionCode="1"
-    android:versionName="0.1a" >
+    android:versionName="0.1a">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -23,16 +23,21 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartupActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:screenOrientation="portrait">
         </activity>
 
         <meta-data
@@ -44,57 +49,55 @@
             android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppSettings" >
-        </activity>
+            android:theme="@style/AppSettings" />
         <activity
             android:name=".doctors.DoctorsActivity"
             android:label="@string/title_activity_doctors"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppDoctors" >
-        </activity>
+            android:theme="@style/AppDoctors" />
         <activity
             android:name=".doctors.DoctorsDetails"
             android:label="@string/title_activity_doctors"
             android:parentActivityName=".doctors.DoctorsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppDoctors" >
-        </activity>
+            android:theme="@style/AppDoctors" />
         <activity
             android:name=".places.PlacesActivity"
             android:label="@string/title_activity_places"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppPlaces" >
-        </activity>
+            android:theme="@style/AppPlaces" />
         <activity
             android:name=".places.PlacesCategoryActivity"
+            android:label=""
             android:parentActivityName=".places.PlacesActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppPlaces"
-            android:label="@string/title_activity_places_category" >
-        </activity>
+            android:theme="@style/AppPlaces" />
+        <activity
+            android:name=".places.PlacesDetailsActivity"
+            android:label="@string/title_activity_places_details"
+            android:parentActivityName=".places.PlacesCategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppPlaces" />
         <activity
             android:name=".publictransport.PublicTransportActivity"
             android:label="@string/title_activity_public_transport"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppPublicTransport" >
-        </activity>
+            android:theme="@style/AppPublicTransport" />
         <activity
             android:name=".calendar.CalendarActivity"
             android:label="@string/title_activity_calendar"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppCalendar" >
-        </activity>
+            android:theme="@style/AppCalendar" />
         <activity
             android:name=".emergency.EmergencyActivity"
             android:label="@string/title_activity_emergency"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppEmergency" >
-        </activity>
+            android:theme="@style/AppEmergency" />
     </application>
 
 </manifest>

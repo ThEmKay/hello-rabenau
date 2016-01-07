@@ -1,106 +1,125 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:padding="5dp"
-    android:background="#fff"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_emergency"
+    android:orientation="vertical"
     tools:context="vb.refugeehelpvb.emergency.EmergencyActivity">
 
-    <!-- CALL AMBULANCE -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:alpha="0.9" >
 
-    <TextView
+        <!-- CALL AMBULANCE -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgAmbulance"
+            android:src="@drawable/ic_ambulance"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAmbulance"
+            android:text="@string/ambulance"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/imgAmbulance" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nbrAmbulance"
+            android:drawableLeft="@drawable/ic_call"
+            android:textSize="35dp"
+            android:textColor="#000"
+            android:text="112"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lblAmbulance" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lblAmbulance"
-        android:text="@string/ambulance"
-        android:textColor="#000"
-        android:textSize="22dp"
-        android:layout_alignParentLeft="true" />
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:alpha="0.9" >
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imgAmbulance"
-        android:src="@drawable/ic_ambulance"
-        android:layout_below="@+id/lblAmbulance" />
+        <!-- CALL VIOLENCE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblViolence"
+            android:text="Polizei"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:layout_alignParentLeft="true" />
 
-    <Button
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgViolence"
+            android:src="@drawable/ic_violence"
+            android:layout_below="@+id/lblViolence" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgViolence"
+            android:layout_below="@+id/lblViolence"
+            android:drawableLeft="@drawable/ic_call"
+            android:id="@+id/nbrViolence"
+            android:text="110"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/lblAmbulance"
-        android:id="@+id/nbrAmbulance"
-        android:layout_centerHorizontal="@+id/imgAmbulance"
-        android:drawableLeft="@drawable/ic_call"
-        android:textSize="35dp"
-        android:textColor="#000"
-        android:text="112"
-        android:layout_alignParentRight="true" />
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:alpha="0.9" >
 
+        <!-- CALL FIRE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblFire"
+            android:text="@string/fire_accident"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:layout_alignParentLeft="true" />
 
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgFire"
+            android:src="@drawable/ic_fire"
+            android:layout_below="@+id/lblFire" />
 
-    <!-- CALL VIOLENCE -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgFire"
+            android:layout_below="@+id/lblFire"
+            android:drawableLeft="@drawable/ic_call"
+            android:id="@+id/nbrFire"
+            android:textSize="35dp"
+            android:textColor="#000"
+            android:text="112"
+            android:layout_alignParentRight="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblViolence"
-        android:text="@string/violence_crime"
-        android:textColor="#000"
-        android:textSize="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imgAmbulance" />
+    </RelativeLayout>
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imgViolence"
-        android:src="@drawable/ic_violence"
-        android:layout_below="@+id/lblViolence" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/imgViolence"
-        android:layout_below="@+id/lblViolence"
-        android:drawableLeft="@drawable/ic_call"
-        android:id="@+id/nbrViolence"
-        android:text="110"
-        android:textColor="#000"
-        android:textSize="35dp"
-        android:layout_alignParentRight="true" />
-
-
-    <!-- CALL FIRE -->
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblFire"
-        android:text="@string/fire_accident"
-        android:textColor="#000"
-        android:textSize="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imgViolence" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imgFire"
-        android:src="@drawable/ic_fire"
-        android:layout_below="@+id/lblFire" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/imgFire"
-        android:layout_below="@+id/lblFire"
-        android:drawableLeft="@drawable/ic_call"
-        android:id="@+id/nbrFire"
-        android:textSize="35dp"
-        android:textColor="#000"
-        android:text="112"
-        android:layout_alignParentRight="true" />
-
-
-</RelativeLayout>
+</LinearLayout>

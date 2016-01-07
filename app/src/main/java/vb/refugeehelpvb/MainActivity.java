@@ -21,6 +21,7 @@ import android.view.View;
 import org.osmdroid.tileprovider.constants.OpenStreetMapTileProviderConstants;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 
 import vb.refugeehelpvb.calendar.CalendarActivity;
@@ -28,6 +29,7 @@ import vb.refugeehelpvb.doctors.DoctorsActivity;
 import vb.refugeehelpvb.emergency.EmergencyActivity;
 import vb.refugeehelpvb.helpers.AppSettings;
 import vb.refugeehelpvb.helpers.DataContainer;
+import vb.refugeehelpvb.helpers.DateTime;
 import vb.refugeehelpvb.helpers.ResourceProvider;
 import vb.refugeehelpvb.places.PlacesActivity;
 import vb.refugeehelpvb.publictransport.PublicTransportActivity;
@@ -52,25 +54,7 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         // App-Settings laden: Sprache und Hintergrundbild setzen
-        AppSettings.setLanguage(getApplicationContext(), Locale.getDefault().getDisplayLanguage());
-        AppSettings.loadCitySetting(getApplicationContext());
         //AppSettings.setAppBackground(getApplicationContext());
-
-        Runnable loadData = new Runnable() {
-            @Override
-            public void run() {
-
-                OpenStreetMapTileProviderConstants.setOfflineMapsPath(Environment.getExternalStorageDirectory() + "/osmdroid");
-                OpenStreetMapTileProviderConstants.setCachePath(Environment.getExternalStorageDirectory() + "/osmdroid");
-
-                DataContainer.init(getApplicationContext());
-            }
-        };
-        loadData.run();
-
-
-
-        //System.out.println(DataContainer.getInstance().getCachedDocs("alsfeld").size());
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);

@@ -55,6 +55,7 @@ public class PlacesCategoryAdapter extends BaseAdapter {
             holder.plaAddress = (TextView) convertView.findViewById(R.id.plaAddress);
             holder.plaCity = (TextView) convertView.findViewById(R.id.plaCity);
             holder.plaLogo = (ImageView) convertView.findViewById(R.id.plaLogo);
+            holder.plaCost = (ImageView) convertView.findViewById(R.id.imgFree);
             convertView.setTag(holder);
         }else{
             holder = (Holder) convertView.getTag();
@@ -64,6 +65,13 @@ public class PlacesCategoryAdapter extends BaseAdapter {
         holder.plaAddress.setText(datalist.get(position).address);
         holder.plaCity.setText(datalist.get(position).city);
 
+        switch(datalist.get(position).price){
+            case 0: holder.plaCost.setImageResource(R.drawable.ic_pic_free); break;
+            case 1: holder.plaCost.setImageResource(R.drawable.ic_pic_price1); break;
+            case 2: holder.plaCost.setImageResource(R.drawable.ic_pic_price2); break;
+            case 3: holder.plaCost.setImageResource(R.drawable.ic_pic_price3); break;
+        }
+
         switch(datalist.get(position).logo){
             case "tafel": holder.plaLogo.setImageResource(R.drawable.logo_tafel_alsfeld); break;
             case "aldi_nord": holder.plaLogo.setImageResource(R.drawable.logo_aldinord); break;
@@ -72,7 +80,7 @@ public class PlacesCategoryAdapter extends BaseAdapter {
             case "lidl": holder.plaLogo.setImageResource(R.drawable.logo_lidl); break;
             case "penny": holder.plaLogo.setImageResource(R.drawable.logo_penny); break;
             case "tegut": holder.plaLogo.setImageResource(R.drawable.logo_tegut); break;
-            default: holder.plaLogo.setImageResource(R.drawable.logo_aldisued); break;
+            default: holder.plaLogo.setImageResource(R.drawable.ic_store); break;
         }
 
         return convertView;
@@ -84,7 +92,7 @@ public class PlacesCategoryAdapter extends BaseAdapter {
         TextView plaAddress;
         TextView plaCity;
         ImageView plaLogo;
-        ImageView plaAttr1;
+        ImageView plaCost;
         ImageView plaAttr2;
         ImageView docLang3;
     }

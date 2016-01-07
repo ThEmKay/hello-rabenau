@@ -24,8 +24,15 @@ public class CitySpinner {
 
         selCity.setAdapter(adapter);
 
+        // Wenn im Activity-Context (z.B. Aerzte) eine bestimmte Stadt gewahelt wurde, soll beim zurueck-
+        // navigieren diese wieder ausgewahelt sein. Falls nicht wird die Heimatstadt aus den Settings genommen
+        String preSelectCity = city;
+        if(!Observer.previousSelectedCity.equals("")) {
+            preSelectCity = Observer.previousSelectedCity;
+        }
+
         for(int i = 0; i < adapter.getCount(); i++){
-            if(city.equals(adapter.getItem(i).toString())){
+            if(preSelectCity.toLowerCase().equals(adapter.getItem(i).toString().toLowerCase())){
                 selCity.setSelection(i);
                 break;
             }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPlacesDetails"
     android:layout_width="fill_parent"
     android:orientation="vertical"
     android:layout_height="fill_parent"
-    android:id="@+id/layoutDoctorsDetails"
     android:background="#fff" >
 
     <ScrollView
@@ -144,58 +144,24 @@
                 android:padding="2dp"
                 android:textColor="#000" />
 
-            <!-- SPRACHEN -->
-            <TextView
-                android:id="@+id/lblLangs"
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="@string/label_spokenlangs"
-                android:textColor="@color/label"
+            <!-- SAMSTAG -->
+            <ImageView
+                android:id="@+id/imgSaturday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_below="@id/imgFriday"
-                android:layout_alignParentLeft="true" />
-            <ImageView
-                android:id="@+id/imgLanguage1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:visibility="invisible"
-                android:layout_below="@id/lblLangs" />
-            <ImageView
-                android:id="@+id/imgLanguage2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:visibility="invisible"
-                android:layout_toRightOf="@id/imgLanguage1"
-                android:layout_below="@id/lblLangs" />
-            <ImageView
-                android:id="@+id/imgLanguage3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:visibility="invisible"
-                android:layout_toRightOf="@id/imgLanguage2"
-                android:layout_below="@id/lblLangs" />
-
-            <!-- TELEFON -->
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_saturday" />
             <TextView
-                android:id="@+id/lblTel"
-                android:layout_marginTop="10dp"
+                android:id="@+id/timeSaturday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="@string/label_contact"
-                android:textColor="@color/label"
-                android:layout_below="@id/imgLanguage1"
-                android:layout_alignParentLeft="true" />
-            <TextView
-                android:id="@+id/txtPhone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lblTel"
-                android:layout_alignParentLeft="true"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/imgFriday"
+                android:layout_toRightOf="@id/imgSaturday"
                 android:textSize="16dp"
-                android:textColor="#000"
-                android:layout_marginBottom="10dp" />
+                android:padding="2dp"
+                android:textColor="#000" />
 
         </RelativeLayout>
 

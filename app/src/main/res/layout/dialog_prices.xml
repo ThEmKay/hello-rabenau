@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgFree"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_pic_free" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imgFree"
+        android:layout_toRightOf="@id/imgFree"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:text="Kostenlos" />
+
+    <ImageView
+        android:id="@+id/imgPrice1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgFree"
+        android:src="@drawable/ic_pic_price1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imgPrice1"
+        android:layout_toRightOf="@id/imgPrice1"
+        android:layout_below="@id/imgFree"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:text="Günstige Preise" />
+
+    <ImageView
+        android:id="@+id/imgPrice2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgPrice1"
+        android:src="@drawable/ic_pic_price2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPrice2"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:layout_alignBaseline="@+id/imgPrice2"
+        android:layout_below="@id/imgPrice1"
+        android:text="Moderate Preise" />
+
+    <ImageView
+        android:id="@+id/imgPrice3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgPrice2"
+        android:src="@drawable/ic_pic_price3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPrice2"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:layout_alignBaseline="@+id/imgPrice3"
+        android:layout_below="@id/imgPrice2"
+        android:text="Hohe Preise" />
+
+</RelativeLayout>

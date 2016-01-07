@@ -4,9 +4,9 @@
       {
         "id": "1",
         "title": "Alsfelder Tafel e.V.",
-        "address": "Georg-Dietrich-Bücking Straße 20",
+        "address": "Georg-Dietrich-BÃ¼cking StraÃŸe 20",
         "logo": "tafel",
-        "free": true,
+        "free": 0,
         "postal": "36304",
         "city": "Alsfeld"
       },
@@ -15,43 +15,45 @@
         "title": "Aldi Markt",
         "address": "An der Au 14",
         "logo": "aldi_nord",
-        "free": false,
+        "free": 1,
         "postal": "36304",
-        "city": "Alsfeld"
+        "city": "Alsfeld",
+        "openhours":["08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00"]
       },
       {
         "id": "3",
         "title": "Aldi Markt",
-        "address": "Grünbergerstr. 82",
+        "address": "GrÃ¼nbergerstr. 82",
         "logo": "aldi_nord",
-        "free": false,
+        "free": 1,
         "postal": "36304",
-        "city": "Alsfeld"
+        "city": "Alsfeld",
+        "openhours":["08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00"]
       },
       {
         "id": "7",
         "title": "Herkules",
-        "address": "Georg-Dietrich-Bücking-Straße 2",
+        "address": "Georg-Dietrich-BÃ¼cking-StraÃŸe 2",
         "logo": "herkules",
-        "free": false,
+        "free": 2,
         "postal": "36304",
         "city": "Alsfeld"
       },
       {
         "id": "4",
         "title": "Lidl",
-        "address": "Grünbergerstr. 83",
+        "address": "GrÃ¼nbergerstr. 83",
         "logo": "lidl",
-        "free": false,
+        "free": 1,
         "postal": "36304",
         "city": "Alsfeld"
       },
       {
         "id": "5",
         "title": "Penny",
-        "address": "Grünbergerstr. 82",
+        "address": "GrÃ¼nbergerstraÃŸe 82",
         "logo": "penny",
-        "free": false,
+        "free": 1,
         "postal": "36304",
         "city": "Alsfeld"
       },
@@ -60,10 +62,41 @@
         "title": "tegut",
         "address": "An der Au 10",
         "logo": "tegut",
-        "free": false,
+        "free": 2,
         "postal": "36304",
         "city": "Alsfeld"
       }
-    ]
+    ],
+    "2": [
+      {
+        "id": "1",
+        "title": "Deutsches Rotes Kreuz",
+        "address": "An der Au 3",
+        "logo": "",
+        "free": 0,
+        "postal": "36304",
+        "city": "Alsfeld"
+    }],
+    "3": [
+      {
+        "id": "1",
+        "title": "Apotheke am Rathaus",
+        "address": "Markt 14",
+        "logo": "",
+        "free": 0,
+        "postal": "36304",
+        "openhours":["08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 13:00"],
+        "city": "Alsfeld"
+      }],
+    "4": [
+      {
+        "id": "1",
+        "title": "Selsbtlernzentrum Deutsch",
+        "address": "Altenburger StraÃŸe 40",
+        "logo": "",
+        "free": 0,
+        "postal": "36304",
+        "city": "Alsfeld"
+      }]
   }
 }

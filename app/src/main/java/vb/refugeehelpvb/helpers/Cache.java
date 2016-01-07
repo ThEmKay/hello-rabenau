@@ -1,19 +1,15 @@
 package vb.refugeehelpvb.helpers;
 
 import android.content.Context;
+import android.os.SystemClock;
 import android.util.Log;
-import android.widget.Toast;
-
-import com.google.android.gms.location.places.Place;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import vb.refugeehelpvb.R;
 import vb.refugeehelpvb.doctors.DoctorsContent;
 import vb.refugeehelpvb.places.PlacesContent;
 
@@ -26,7 +22,6 @@ public class Cache {
 
     protected static HashMap<String, HashMap<String, ArrayList<PlacesContent>>> placesCache = new HashMap<String, HashMap<String, ArrayList<PlacesContent>>>();
     private static   HashMap<String, ArrayList<PlacesContent>> placesInner = null;
-
 
     protected static void cacheDoctors(JSONObject o, String[] s, Context co){
 
@@ -82,7 +77,7 @@ public class Cache {
                     }
                     data.add(doc);
                 }
-            } catch (JSONException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
                 Log.e("CACHE", "DOKTOR JSON VERARBEITEN");
             }
@@ -101,15 +96,15 @@ public class Cache {
         // Aeusseres Element der Map (Stadt/Gemeinde)
         for(int i = 0; i < city.length; i++){
 
+            placesInner = new HashMap<String, ArrayList<PlacesContent>>();
+
             Log.i("CACHE", "PLACES: "+city[i]);
             for(int j = 0; j < category.length; j++){
                 try {
-                    Log.i("CACHE", "PLACES: "+category[i]);
+                    Log.i("CACHE", "PLACES KATEGORIE: "+category[j]);
 
                     data = new ArrayList<PlacesContent>();
-                    JSONArray places = o.getJSONObject(city[i].toLowerCase()).getJSONArray(category[i]);
-
-                    placesInner = new HashMap<String, ArrayList<PlacesContent>>();
+                    JSONArray places = o.getJSONObject(city[i].toLowerCase()).getJSONArray(category[j]);
 
                     PlacesContent pla;
                     JSONObject p;
@@ -122,18 +117,24 @@ public class Cache {
                         pla.city = p.getString("city");
                         pla.logo = p.getString("logo");
 
+                        pla.price = p.getInt("free");
+
+                        if(!p.isNull("openhours")){
+                            pla.openHours = p.getJSONArray("openhours");
+                        }
+
                         data.add(pla);
                     }
 
-                    placesInner.put(category[i], data);
-                    placesCache.put(city[i], placesInner);
-
+                    placesInner.put(category[j], data);
 
 
                 }catch(Exception e){
 
                 }
             }
+
+            placesCache.put(city[i], placesInner);
         }
 
         System.out.println(placesCache.get("alsfeld"));
