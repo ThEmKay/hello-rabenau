@@ -35,7 +35,7 @@ public class PlacesDetailsActivity extends AppCompatActivity {
         // ##################
         // Datensatz des ausgewaehlten Ortes aus dem Cache holen
         Intent in = getIntent();
-        ArrayList<PlacesContent> places = DataContainer.getInstance().getPlacesCache(in.getStringExtra("city"), Observer.PlacesCategory);
+        ArrayList<PlacesContent> places = DataContainer.getInstance(getApplicationContext()).getPlacesCache(in.getStringExtra("city"), Observer.PlacesCategory);
         PlacesContent place = places.get(in.getIntExtra("placeId", 1) - 1);
 
         // ##################

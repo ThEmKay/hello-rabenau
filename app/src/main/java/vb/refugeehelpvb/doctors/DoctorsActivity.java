@@ -3,6 +3,7 @@ package vb.refugeehelpvb.doctors;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -79,9 +80,9 @@ public class DoctorsActivity extends AppCompatActivity {
                 data.clear();
                 // Neue Daten gemaess der Auswahl zur Liste hinzufuegen
                 if(Observer.previousSelectedCity.equals("")) {
-                    data.addAll(DataContainer.getInstance().getDoctors(parent.getSelectedItem().toString().toLowerCase()));
+                    data.addAll(DataContainer.getInstance(getApplicationContext()).getDoctors(parent.getSelectedItem().toString().toLowerCase()));
                 }else{
-                    data.addAll(DataContainer.getInstance().getDoctors(Observer.previousSelectedCity));
+                    data.addAll(DataContainer.getInstance(getApplicationContext()).getDoctors(Observer.previousSelectedCity));
                     Observer.previousSelectedCity = "";
                 }
                 // Adapter aktualisiern
@@ -114,6 +115,17 @@ public class DoctorsActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_doctors, menu);
         return true;
+    }
+
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        if(!Observer.dataLoaded()){
+            startActivity(new Intent(getApplicationContext(), StartupActivity.class));
+            onStop();
+        }
+        Log.i("ActivityLifeCycleDemo", "onResume");
     }
 
 }

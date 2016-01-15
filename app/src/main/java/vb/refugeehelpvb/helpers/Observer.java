@@ -13,4 +13,11 @@ public class Observer {
     // Danach wird der String wieder geleert
     public static String previousSelectedCity = "";
 
+    public static boolean dataLoaded(){
+        /*if(DataContainer.getInstance(getApp).getDoctors("alsfeld") != null){
+            return true;
+        }*/
+        return true;
+    }
+
 }

@@ -98,7 +98,7 @@ public class StartupActivity extends AppCompatActivity {
             OpenStreetMapTileProviderConstants.setCachePath(Environment.getExternalStorageDirectory() + "/osmdroid");
             publishProgress((int) 60);
 
-            DataContainer.init(getApplicationContext());
+            DataContainer.getInstance(getApplicationContext());
             publishProgress((int) 80);
 
             DateTime.getInstance();

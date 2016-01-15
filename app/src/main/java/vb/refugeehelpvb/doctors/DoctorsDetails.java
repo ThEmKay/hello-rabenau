@@ -38,7 +38,7 @@ public class DoctorsDetails extends AppCompatActivity {
         // ##################
         // Datensatz des ausgewaehlten Doktors aus dem Cache holen
         int docId = getIntent().getIntExtra("id", 1);
-        ArrayList<DoctorsContent> docs = DataContainer.getInstance().getDoctors(getIntent().getStringExtra("city"));
+        ArrayList<DoctorsContent> docs = DataContainer.getInstance(getApplicationContext()).getDoctors(getIntent().getStringExtra("city"));
         DoctorsContent doc = docs.get(docId - 1);
 
         // ##################

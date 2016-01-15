@@ -51,7 +51,7 @@ public class DataContainer extends Cache{
 
     private DataContainer(){}
 
-    public static void init(Context c){
+    private static void init(Context c){
         if(d == null){
             co = c;
             FileOutputStream fo;
@@ -96,9 +96,11 @@ public class DataContainer extends Cache{
         Log.i("UPDATE", "CONTAINER aktualisiert");
     }
 
-    public static DataContainer getInstance(){
+    public static DataContainer getInstance(Context c){
         if(d == null){
-            d = new DataContainer();
+            DataContainer dtmp = new DataContainer();
+            dtmp.init(c);
+            d = dtmp;
         }
         return d;
     }
@@ -152,7 +154,7 @@ public class DataContainer extends Cache{
             mockCategories[2] = "3";
             mockCategories[3] = "4";
 
-            // Caching der Doktoren-Daten (JSON wird so nur einmalig gelesen)
+            // Caching der Orte-Daten (JSON wird so nur einmalig gelesen)
             cachePlaces(placesJson, mockCities, mockCategories, co);
 
 

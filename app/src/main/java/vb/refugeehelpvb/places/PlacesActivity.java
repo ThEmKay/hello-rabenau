@@ -27,8 +27,8 @@ public class PlacesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
 
-        int icons[] = DataContainer.getInstance().getPlacesCategoriesIcons();
-        final String labels[] = DataContainer.getInstance().getPlacesCategoriesLabels();
+        int icons[] = DataContainer.getInstance(getApplicationContext()).getPlacesCategoriesIcons();
+        final String labels[] = DataContainer.getInstance(getApplicationContext()).getPlacesCategoriesLabels();
 
         if(labels.length == icons.length){
             GridView gridView = (GridView) findViewById(R.id.gridPlaces);
