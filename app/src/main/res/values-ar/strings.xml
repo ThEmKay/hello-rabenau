@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Hello!</string>
+    <string name="places_cat_clothes">ملابس </string>
+    <string name="places_cat_education">التعليم</string>
+    <string name="places_cat_food">طعام</string>
+    <string name="places_cat_pharmacies">الصيدليات</string>
+    <string name="places_cat_playgrounds">ملاعب</string>
+    <string name="places_cat_sports">الرياضة</string>
+    <string name="places_cat_www">الإنترنت حر</string>
+    <string name="btn_informationen">معلومات مفيدة</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="closed">مغلق</string>
+    <string name="closed_holiday">مفلق عطلة</string>
+    <string name="emergency" translatable="false">حالة طوارئ</string>
+    <string name="hometown" translatable="false">مسقط الراس</string>
+    <string name="label_address">العنوان/ عنوان</string>
+    <string name="label_contact">اتصال</string>
+    <string name="label_openhours">ساعات الدوام</string>
+    <string name="label_spokenlangs">اللغات تحدث بها</string>
+    <string name="title_activity_calendar">تقويم</string>
+    <string name="title_activity_doctors">أطباء</string>
+    <string name="title_activity_places">امكنة</string>
+    <string name="title_activity_public_transport">وسائل نقل عام</string>
+    <string name="title_activity_settings">إعدادات</string>
 </resources>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Hello!</string>
     <string name="hello_world">Hello world!</string>
-    <string name="emergency" translatable="false">Notfall</string>
+    <string name="emergency">Emergency</string>
     <string name="title_activity_settings">Settings</string>
 
     <string-array name="cities">

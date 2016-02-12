@@ -9,7 +9,7 @@
     <string name="btn_informationen">Nützliche Informationen</string>
     <string name="title_activity_places">Orte</string>
     <string name="title_activity_emergency">Notfall</string>
-    <string name="title_activity_doctors">Doktoren</string>
+    <string name="title_activity_doctors">Ärzte</string>
     <string name="title_activity_public_transport">Verkehrsmittel</string>
     <string name="title_activity_calendar">Kalender</string>
     <string name="title_activity_settings">Einstellungen</string>
@@ -27,4 +27,5 @@
     <string name="closed">Geschlossen</string>
     <string name="label_contact">Kontakt</string>
     <string name="closed_holiday">Geschlossen (Feiertag)</string>
+    <string name="emergency">Notfall</string>
 </resources>
