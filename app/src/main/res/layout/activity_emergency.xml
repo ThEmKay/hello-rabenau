@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_emergency"
     android:orientation="vertical"
-    tools:context="vb.refugeehelpvb.emergency.EmergencyActivity">
+    tools:context="vb.helloRabenau.emergency.EmergencyActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,21 +15,20 @@
         android:alpha="0.9" >
 
         <!-- CALL AMBULANCE -->
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/imgAmbulance"
-            android:src="@drawable/ic_ambulance"
-            android:layout_alignParentTop="true" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/lblAmbulance"
             android:text="@string/ambulance"
             android:textColor="#000"
-            android:textSize="20dp"
-            android:layout_toRightOf="@id/imgAmbulance" />
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgAmbulance"
+            android:src="@drawable/ic_ambulance"
+            android:layout_below="@+id/lblAmbulance" />
 
         <Button
             android:layout_width="wrap_content"

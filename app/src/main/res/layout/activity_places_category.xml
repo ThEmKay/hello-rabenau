@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_romrod1"
+    android:background="@drawable/bg_places"
     android:padding="5dp"
-    tools:context="vb.refugeehelpvb.places.PlacesCategoryActivity">
+    tools:context="vb.helloRabenau.places.PlacesCategoryActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"

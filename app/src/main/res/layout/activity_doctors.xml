@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    android:background="@drawable/bg_lauterbach1"
+    android:background="@drawable/bg_docs"
     android:orientation="vertical" >
 
     <LinearLayout

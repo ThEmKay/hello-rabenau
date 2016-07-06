@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hello!</string>
+    <string name="app_name">Hello: Rabenau!</string>
     <string name="places_cat_clothes">ملابس </string>
     <string name="places_cat_education">التعليم</string>
     <string name="places_cat_food">طعام</string>

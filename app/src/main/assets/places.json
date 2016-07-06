@@ -1,102 +1,332 @@
 {
-  "alsfeld": {
-    "1": [
+  "londorf": {
+    "1": [],
+    "2":[
       {
         "id": "1",
-        "title": "Alsfelder Tafel e.V.",
-        "address": "Georg-Dietrich-Bücking Straße 20",
-        "logo": "tafel",
+        "title": "Grundschule Rabenau",
+        "address": "Mozartstraße 20",
+        "logo": "",
         "free": 0,
-        "postal": "36304",
-        "city": "Alsfeld"
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
       },
       {
         "id": "2",
-        "title": "Aldi Markt",
-        "address": "An der Au 14",
-        "logo": "aldi_nord",
-        "free": 1,
-        "postal": "36304",
-        "city": "Alsfeld",
-        "openhours":["08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00"]
-      },
+        "title": "Kindergarten Rabennest",
+        "address": "Eichweg",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "3":	[
       {
         "id": "3",
-        "title": "Aldi Markt",
-        "address": "Grünbergerstr. 82",
-        "logo": "aldi_nord",
-        "free": 1,
-        "postal": "36304",
-        "city": "Alsfeld",
-        "openhours":["08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00"]
-      },
-      {
-        "id": "7",
-        "title": "Herkules",
-        "address": "Georg-Dietrich-Bücking-Straße 2",
-        "logo": "herkules",
+        "title": "REWE Moeser",
+        "address": "An der Mühle 13",
+        "logo": "",
         "free": 2,
-        "postal": "36304",
-        "city": "Alsfeld"
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
       },
       {
         "id": "4",
-        "title": "Lidl",
-        "address": "Grünbergerstr. 83",
-        "logo": "lidl",
+        "title": "ALDI Nord",
+        "address": "An der Mühle 9",
+        "logo": "",
         "free": 1,
-        "postal": "36304",
-        "city": "Alsfeld"
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
       },
       {
+        "id": "3",
+        "title": "Bäckerei Dickel",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "3",
+        "title": "Bäckerei Müller",
+        "address": "An der Mühle 13",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "3",
+        "title": "Eisdiele Hasselbach",
+        "address": "Jahnstraße 6",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "4":	[
+      {
+        "id": "4",
+        "title": "Rabenau Apotheke",
+        "address": "Giessner Straße 23",
+        "logo": "",
+        "free": 3,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "5":	[
+      {
         "id": "5",
-        "title": "Penny",
-        "address": "Grünbergerstraße 82",
-        "logo": "penny",
-        "free": 1,
-        "postal": "36304",
-        "city": "Alsfeld"
+        "title": "Spielplatz Bahnhof",
+        "address": "Bahnhofstraße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "6":	[
+      {
+        "id": "6",
+        "title": "Minigolf Burggarten",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
       },
       {
         "id": "6",
-        "title": "tegut",
-        "address": "An der Au 10",
-        "logo": "tegut",
-        "free": 2,
-        "postal": "36304",
-        "city": "Alsfeld"
+        "title": "Sportplatz",
+        "address": "Am Lehnköppel",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "6",
+        "title": "Kunstrasenplatz >Soccer<",
+        "address": "Mozartstraße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
       }
     ],
-    "2": [
+    "7":	[
+    ],
+    "8":	[
       {
-        "id": "1",
-        "title": "Deutsches Rotes Kreuz",
-        "address": "An der Au 3",
+        "id": "8",
+        "title": "GU Festplatz",
+        "address": "Gartenstraße",
         "logo": "",
         "free": 0,
-        "postal": "36304",
-        "city": "Alsfeld"
-    }],
-    "3": [
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
       {
-        "id": "1",
-        "title": "Apotheke am Rathaus",
-        "address": "Markt 14",
+        "id": "8",
+        "title": "GU Bürogebäude LICH",
+        "address": "Giessner Straße 15",
         "logo": "",
         "free": 0,
-        "postal": "36304",
-        "openhours":["08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 13:00"],
-        "city": "Alsfeld"
-      }],
-    "4": [
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "9":	[
+    ],
+    "10":	[
       {
-        "id": "1",
-        "title": "Selsbtlernzentrum Deutsch",
-        "address": "Altenburger Straße 40",
+        "id": "10",
+        "title": "Kath. Kirche St. Franziskus",
+        "address": "Leestraße 23",
         "logo": "",
         "free": 0,
-        "postal": "36304",
-        "city": "Alsfeld"
-      }]
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "10",
+        "title": "Ev.-luth. Kirche Londorf",
+        "address": "Bahnhofstraße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "11": [
+      {
+        "id": "11",
+        "title": "Briefkasten Lumdatalhalle",
+        "address": "Eichweg",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "11",
+        "title": "Postfiliale",
+        "address": "Jahnstraße 6",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "11",
+        "title": "Briefkasten Museum",
+        "address": "Brodbachstraße",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "11",
+        "title": "Briefkasten Burggarten",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "11",
+        "title": "Hermes Station Olemotz",
+        "address": "Wallstraße 30",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "12": [
+      {
+        "id": "12",
+        "title": "Bushaltestelle Giessner Straße",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "12",
+        "title": "Bushaltestelle Burggarten",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "12",
+        "title": "Bushaltestelle Allertshäuser Straße",
+        "address": "Allertshäuser Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "12",
+        "title": "Bushaltestelle Wallstraße",
+        "address": "Marburger Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "13": [
+      {
+        "id": "13",
+        "title": "Sparkasse Grünberg",
+        "address": "Wallstraße 26",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ],
+    "14": [
+      {
+        "id": "14",
+        "title": "Bürgersaal im Bahnhof",
+        "address": "Leestraße 12",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "14",
+        "title": "Heimatmuseum",
+        "address": "Brotbachstraße 2",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "14",
+        "title": "Ev.-luth. Gemeindezentrum",
+        "address": "Giessner Straße 30",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      },
+      {
+        "id": "14",
+        "title": "Bruder Konrad Haus",
+        "address": "Mozartstraße 1",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": []
+      }
+    ]
   }
+
 }

@@ -1,28 +1,36 @@
 <resources>
-    <string name="app_name">Hello!</string>
+    <string name="app_name">Hello: Rabenau</string>
     <string name="hello_world">Hello world!</string>
     <string name="emergency">Emergency</string>
     <string name="title_activity_settings">Settings</string>
 
     <string-array name="cities">
-        <item>@string/alsfeld</item>
-        <item>@string/lauterbach</item>
-        <item>@string/romrod</item>
+        <item>@string/geilshausen</item>
+        <item>@string/londorf</item>
+        <item>@string/rüddingshausen</item>
     </string-array>
 
     <string-array name="places">
-        <item>@string/places_cat_food</item>
         <item>@string/places_cat_clothes</item>
-        <item>@string/places_cat_pharmacies</item>
         <item>@string/places_cat_education</item>
-        <item>@string/places_cat_sports</item>
+        <item>@string/places_cat_food</item>
+        <item>@string/places_cat_pharmacies</item>
         <item>@string/places_cat_playgrounds</item>
+        <item>@string/places_cat_sports</item>
         <item>@string/places_cat_www</item>
+        <item>Unterkünfte</item>
+        <item>Friseure</item>
+        <item>Gotteshäuser</item>
+        <item>Post</item>
+        <item>Finanzen</item>
+        <item>Bürokratie</item>
     </string-array>
 
     <string name="hometown">Hometown</string>
-    <string name="alsfeld">Alsfeld</string>
-    <string name="lauterbach">Lauterbach</string>
+    <string name="geilshausen">Geilshausen</string>
+    <string name="londorf">Londorf</string>
+    <string name="rüddingshausen">Rüddingshausen</string>
+
     <string name="ambulance">Ambulance</string>
     <string name="fire_accident">Fire / Accident</string>
     <string name="violence_crime">Violence / Crime</string>
@@ -33,7 +41,6 @@
     <string name="title_activity_places">Places</string>
     <string name="title_activity_public_transport">Public transport</string>
     <string name="title_activity_calendar">Calendar</string>
-    <string name="romrod">Romrod</string>
     <string name="action_settings">Settings</string>
     <string name="places_cat_food">Food</string>
     <string name="places_cat_clothes">Clothes</string>
