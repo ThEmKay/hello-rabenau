@@ -62,12 +62,22 @@ public class PlacesCategoryActivity extends AppCompatActivity {
                 // Liste saeubern
                 data.clear();
                 // Neue Daten gemaess der Auswahl zur Liste hinzufuegen
-                //data.addAll(DataContainer.getInstance().getPlaces(parent.getSelectedItem().toString().toLowerCase(), categoryId));
-                try {
-                    data.addAll(DataContainer.getInstance(getApplicationContext()).getPlacesCache(parent.getSelectedItem().toString().toLowerCase(), categoryId));
-                }catch(NullPointerException e){
-                    Toast.makeText(parent.getContext(), "Keine Daten vorhanden", Toast.LENGTH_LONG).show();
+                // Falls zuvor bereits ein Eintrag besucht wurde, die gemerkte Auswahl (Stadt/Ort) wählen
+                if(Observer.previousSelectedCity.equals("")) {
+                    try {
+                        data.addAll(DataContainer.getInstance(getApplicationContext()).getPlacesCache(parent.getSelectedItem().toString().toLowerCase(), categoryId));
+                    }catch(NullPointerException e){
+                        Toast.makeText(parent.getContext(), "Keine Daten vorhanden", Toast.LENGTH_LONG).show();
+                    }
+                }else{
+                    try {
+                        data.addAll(DataContainer.getInstance(getApplicationContext()).getPlacesCache(Observer.previousSelectedCity, categoryId));
+                    }catch(NullPointerException e){
+                        Toast.makeText(parent.getContext(), "Keine Daten vorhanden", Toast.LENGTH_LONG).show();
+                    }
+                    Observer.previousSelectedCity = "";
                 }
+
                 // Adapter aktualisiern
                 adp.notifyDataSetChanged();
             }
@@ -85,6 +95,8 @@ public class PlacesCategoryActivity extends AppCompatActivity {
                 // Parameter an neues Intent haengen
                 details.putExtra("placeId", position+1);
                 details.putExtra("city", selCity.getSelectedItem().toString().toLowerCase());
+                // Ausgewählte Stadt "merken" beim Zurückkehren wird diese dann wieder angezeigt
+                Observer.previousSelectedCity = selCity.getSelectedItem().toString().toLowerCase();
                 // Starten
                 startActivity(details);
             }

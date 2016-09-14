@@ -1,7 +1,7 @@
 {
   "londorf": {
     "1": [],
-    "2":[
+    "2": [
       {
         "id": "1",
         "title": "Grundschule Rabenau",
@@ -10,20 +10,24 @@
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6761869, 8.8699628],
+        "openhours":["08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "-", "-"],
+        "info": ""
       },
       {
         "id": "2",
-        "title": "Kindergarten Rabennest",
-        "address": "Eichweg",
+        "title": "Kindertagesstätte Rabennest",
+        "address": "Eichweg 8",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6751301, 8.8688463],
+        "openhours":["08:00 - 16:00", "08:00 - 16:00", "08:00 - 16:00", "08:00 - 16:00", "08:00 - 16:00", "-", "-"],
+        "info": ""
       }
     ],
-    "3":	[
+    "3": [
       {
         "id": "3",
         "title": "REWE Moeser",
@@ -32,7 +36,9 @@
         "free": 2,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67926, 8.84788],
+        "openhours":["07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "-"],
+        "info": ""
       },
       {
         "id": "4",
@@ -42,291 +48,1007 @@
         "free": 1,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67920, 8.84913],
+        "openhours":["08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "08:00 - 20:00", "-"],
+        "info": ""
       },
       {
-        "id": "3",
+        "id": "5",
         "title": "Bäckerei Dickel",
         "address": "Giessner Straße",
         "logo": "",
         "free": 2,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67518, 8.86320],
+        "openhours":["06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -13:00", "-"],
+        "info": ""
       },
       {
-        "id": "3",
+        "id": "6",
         "title": "Bäckerei Müller",
         "address": "An der Mühle 13",
         "logo": "",
         "free": 2,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "3",
-        "title": "Eisdiele Hasselbach",
-        "address": "Jahnstraße 6",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
+        "geo": [50.67926, 50.67926],
+        "openhours":["07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "07:00 - 22:00", "08:00 - 11:00"],
+        "info": ""
       }
     ],
-    "4":	[
+    "4": [
       {
-        "id": "4",
+        "id": "7",
         "title": "Rabenau Apotheke",
         "address": "Giessner Straße 23",
         "logo": "",
         "free": 3,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6751262, 8.8652094],
+        "openhours":["08:00 - 18:30", "08:00 - 18:30", "08:00 - 18:30", "08:00 - 18:30", "08:00 - 18:30", "08:00 - 13:00", "-"],
+        "info": ""
       }
     ],
-    "5":	[
-      {
-        "id": "5",
-        "title": "Spielplatz Bahnhof",
-        "address": "Bahnhofstraße",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      }
-    ],
-    "6":	[
-      {
-        "id": "6",
-        "title": "Minigolf Burggarten",
-        "address": "Giessner Straße",
-        "logo": "",
-        "free": 2,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "6",
-        "title": "Sportplatz",
-        "address": "Am Lehnköppel",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "6",
-        "title": "Kunstrasenplatz >Soccer<",
-        "address": "Mozartstraße",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      }
-    ],
-    "7":	[
-    ],
-    "8":	[
+    "5": [
       {
         "id": "8",
+        "title": "Spielplatz Bahnhof",
+        "address": "Bahnhofstraße",
+        "logo": "under12.png",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.6751262, 8.8652094],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Under 12 years only! - Nur bis 12 Jahre!"
+      }
+    ],
+    "6": [
+      {
+        "id": "9",
+        "title": "Minigolf",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.6749473, 8.863853],
+        "openhours":["16:00 - 21:00", "16:00 - 21:00", "-", "16:00 - 21:00", "16:00 - 21:00", "15:30 - 21:00", "14:30 - 21:00"],
+        "info": ""
+      },
+      {
+        "id": "10",
+        "title": "Sportplatz",
+        "address": "Am Lehnköppel",
+        "logo": "leise",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.6782173, 8.8704673],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      },
+      {
+        "id": "11",
+        "title": "Kunstrasenplatz",
+        "address": "Mozartstraße",
+        "logo": "leise",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.6755243, 8.8694287],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      },
+      {
+        "id": "12",
+        "title": "Boccia",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.6749473, 8.863853],
+        "openhours":["16:00 - 23:00", "16:00 - 23:00", "-", "16:00 - 23:00", "16:00 - 23:00", "16:00 - 23:00", "16:00 - 23:00"],
+        "info": ""
+      }
+    ],
+    "7": [],
+    "8": [
+      {
+        "id": "13",
         "title": "GU Festplatz",
         "address": "Gartenstraße",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67663, 8.86393],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
       },
       {
-        "id": "8",
-        "title": "GU Bürogebäude LICH",
+        "id": "14",
+        "title": "GU Lich",
         "address": "Giessner Straße 15",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6745612, 8.8664793],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
       }
     ],
-    "9":	[
-    ],
-    "10":	[
+    "9": [],
+    "10": [
       {
-        "id": "10",
-        "title": "Kath. Kirche St. Franziskus",
+        "id": "15",
+        "title": "kath. Kirche St. Franziskus",
         "address": "Leestraße 23",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67724, 8.86698],
+        "openhours":["15:00 - 18:00", "-", "15:00 - 18:00", "-", "-", "-", "-"],
+        "info": "Church every sunday at 9:30 am - Heilige Messe jeden Sonntag um 9:30 Uhr"
       },
       {
-        "id": "10",
-        "title": "Ev.-luth. Kirche Londorf",
-        "address": "Bahnhofstraße",
+        "id": "16",
+        "title": "ev. Kirche Londorf",
+        "address": "Giessner Straße",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67496, 8.86218],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Church every sunday at 10:30 am - Gottesdienst jeden Sonntag um 10:30 Uhr"
       }
     ],
     "11": [
       {
-        "id": "11",
+        "id": "17",
         "title": "Briefkasten Lumdatalhalle",
         "address": "Eichweg",
         "logo": "",
         "free": 1,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.675013, 8.869555],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
       },
       {
-        "id": "11",
+        "id": "18",
         "title": "Postfiliale",
         "address": "Jahnstraße 6",
         "logo": "",
         "free": 1,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6766581, 8.8629071],
+        "openhours":["09:00 - 11:00", "09:00 - 11:00", "09:00 - 11:00", "09:00 - 11:00", "09:00 - 11:00", "09:00 - 11:00", "-"],
+        "info": ""
       },
       {
-        "id": "11",
+        "id": "19",
         "title": "Briefkasten Museum",
         "address": "Brodbachstraße",
         "logo": "",
         "free": 1,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.676613, 8.8603457],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
       },
       {
-        "id": "11",
-        "title": "Briefkasten Burggarten",
-        "address": "Giessner Straße",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "11",
-        "title": "Hermes Station Olemotz",
+        "id": "20",
+        "title": "Hermes Station Dörr",
         "address": "Wallstraße 30",
         "logo": "",
         "free": 2,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
-      }
-    ],
-    "12": [
+        "geo": [50.675591, 8.863192],
+        "openhours":["08.30 – 12.30 & 15.00 – 18.00", "08.30 – 12.30 & 15.00 – 18.00", "08:30 - 13:00", "08.30 – 12.30 & 15.00 – 18.00", "08..30 – 12.30 & 15.00 – 18.00", "08:30 - 13:00", "-"],
+        "info": ""
+      },
       {
-        "id": "12",
-        "title": "Bushaltestelle Giessner Straße",
+        "id": "21",
+        "title": "Briefkasten Burggarten",
         "address": "Giessner Straße",
         "logo": "",
-        "free": 0,
+        "free": 1,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "12",
-        "title": "Bushaltestelle Burggarten",
-        "address": "Giessner Straße",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "12",
-        "title": "Bushaltestelle Allertshäuser Straße",
-        "address": "Allertshäuser Straße",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
-      },
-      {
-        "id": "12",
-        "title": "Bushaltestelle Wallstraße",
-        "address": "Marburger Straße",
-        "logo": "",
-        "free": 0,
-        "postal": "35466",
-        "city": "Londorf",
-        "geo": []
+        "geo": [50.67505, 8.86397],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
       }
     ],
+    "12": [],
     "13": [
       {
-        "id": "13",
+        "id": "22",
         "title": "Sparkasse Grünberg",
         "address": "Wallstraße 26",
         "logo": "",
-        "free": 0,
+        "free": 1,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6758779, 8.8629692],
+        "openhours":["08.30 – 12.30 & 14.00 – 16.30", "08.30 – 12.30 & 14.00 – 16.30", "08.30 – 12.30 & 14.00 – 16.30", "08.30 – 12.30 & 14.00 – 18.00", "08.30 – 12.30 & 14.00 – 16.30", "-", "-"],
+        "info": ""
       }
     ],
     "14": [
       {
-        "id": "14",
-        "title": "Bürgersaal im Bahnhof",
+        "id": "23",
+        "title": "Bürgersall im Bahnhof",
         "address": "Leestraße 12",
         "logo": "",
-        "free": 0,
+        "free": 3,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.6764315, 8.8646562],
+        "openhours":["08.30 – 12.30 & 14.00 – 16.30", "08.30 – 12.30 & 14.00 – 16.30", "08.30 – 12.30 & 14.00 – 16.30", "08.30 – 12.30 & 14.00 – 18.00", "08.30 – 12.30 & 14.00 – 16.30", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
       },
       {
-        "id": "14",
+        "id": "24",
         "title": "Heimatmuseum",
         "address": "Brotbachstraße 2",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67683, 8.86014],
+        "openhours":["-", "-", "-", "-", "-", "-", "15:00 - 17:00"],
+        "info": "Opens every first sunday in month - Öffnet jeden ersten Sonntag des Monats"
       },
       {
-        "id": "14",
+        "id": "25",
         "title": "Ev.-luth. Gemeindezentrum",
         "address": "Giessner Straße 30",
         "logo": "",
-        "free": 0,
+        "free": 3,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67475, 8.86254],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
       },
       {
-        "id": "14",
-        "title": "Bruder Konrad Haus",
+        "id": "26",
+        "title": "Bruder-Konrad-Haus",
         "address": "Mozartstraße 1",
+        "logo": "",
+        "free": 3,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67736, 8.86711],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
+      }
+    ],
+    "15": [
+      {
+        "id": "27",
+        "title": "Gemeindeverwaltung",
+        "address": "Eichweg 14",
         "logo": "",
         "free": 0,
         "postal": "35466",
         "city": "Londorf",
-        "geo": []
+        "geo": [50.67501, 8.86711],
+        "openhours":["08:00 - 12:00", "08:00 - 12:00", "08:00 - 12:00", "08.00 – 12.00 & 16.00 – 18.00", "08:00 - 12:00", "-", "-"],
+        "info": ""
       }
     ]
+  },
+  "kesselbach": {
+    "1": [],
+    "2": [],
+    "3": [
+      {
+        "id": "28",
+        "title": "Bäckerei Schnell",
+        "address": "Alsfelder Straße 4",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66939, 8.87355],
+        "openhours":["-", "-", "-", "07:00 – 13:00 & 14:30 – 18:00", "07:00 – 13:00 & 14:30 – 18:00", "07:00 - 13:00", "08:00 - 11:00"],
+        "info": ""
+      }
+    ],
+    "4": [],
+    "5": [
+      {
+        "id": "29",
+        "title": "Spielplatz DGH",
+        "address": "Alsfelder Straße 29",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66926, 8.87611],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Under 12 years only! - Nur bis 12 Jahre!"
+      }
+    ],
+    "6": [
+      {
+        "id": "30",
+        "title": "Sportplatz",
+        "address": "An dem Doberg",
+        "logo": "leise",
+        "free": 0,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.67193, 8.87304],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      }
+    ],
+    "7": [],
+    "8": [],
+    "9": [
+      {
+        "id": "31",
+        "title": "Friseursalon Gutjahr",
+        "address": "Alsfelder Straße 30",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66942, 8.87711],
+        "openhours":["09:00 - 16:00", "09:00 - 16:00", "09:00 - 16:00", "09:00 - 16:00", "09:00 - 16:00", "09:00 - 16:00", "-"],
+        "info": "Appointments by phone - Termine telefonisch"
+      },
+      {
+        "id": "32",
+        "title": "Friseursalon Aiello",
+        "address": "Steinstraße 1",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66917, 8.87393],
+        "openhours":["08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "07:30 - 13:00", "-"],
+        "info": ""
+      }
+    ],
+    "10": [],
+    "11": [
+      {
+        "id": "33",
+        "title": "Briefkasten Tankstelle",
+        "address": "Londorfer Straße 28",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66877, 8.87393],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
+      }
+    ],
+    "12": [],
+    "13": [],
+    "14": [
+      {
+        "id": "34",
+        "title": "Dorfgemeinschaftshaus",
+        "address": "Alsfelder Straße 29",
+        "logo": "",
+        "free": 3,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66922, 8.87673],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
+      }
+    ],
+    "15": []
+  },
+  "geilshausen": {
+    "1": [],
+    "2": [],
+    "3": [
+      {
+        "id": "36",
+        "title": "Schombert-Wagner Elke Lebensmittel",
+        "address": "Grünberger Straße 29",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64685, 8.89523],
+        "openhours":["08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "08:00 - 18:00", "-"],
+          "info": ""
+      },
+      {
+        "id": "37",
+        "title": "Metzgerei Kriep",
+        "address": "Am Graben 4",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64698, 8.89473],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "4": [],
+    "5": [],
+    "6": [
+      {
+        "id": "35",
+        "title": "Sportplatz",
+        "address": "In den Obergärten",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64668, 8.89202],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      }
+    ],
+    "7": [],
+    "8": [
+      {
+        "id": "38",
+        "title": "GU Festplatz",
+        "address": "Am Graben",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64433, 8.89117],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "9": [],
+    "10": [
+      {
+        "id": "39",
+        "title": "Ev.-luth. Kirche",
+        "address": "Kirchenplatz 1",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64699, 8.89564],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": []
+  },
+  "odenhausen": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": [
+      {
+        "id": "40",
+        "title": "Friseursalon Doris Rabenau",
+        "address": "Am Bornweg 12",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.65939, 8.88945],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "41",
+        "title": "Friseursalon Doris Scalla",
+        "address": "Höhenstraße 19",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66368, 8.88930],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      }
+    ],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [
+      {
+        "id": "42",
+        "title": "DGH Odenhausen",
+        "address": "Hauptstraße",
+        "logo": "",
+        "free": 3,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66050, 8.88970],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
+      }
+    ],
+    "15": []
+  },
+  "allertshausen": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [
+      {
+        "id": "44",
+        "title": "Spielplatz Sportplatz",
+        "address": "Höhenstraße 19",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66368, 8.88930],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Under 12 years only! - Nur bis 12 Jahre!"
+      }
+    ],
+    "6": [
+      {
+        "id": "43",
+        "title": "Sportplatz",
+        "address": "Weiherstraße 30",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Allertshausen",
+        "geo": [50.65989, 8.85016],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      }
+    ],
+    "7": [],
+    "8": [
+      {
+        "id": "45",
+        "title": "GU Sportplatz",
+        "address": "Höhenstraße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Allertshausen",
+        "geo": [50.66368, 8.88930],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [
+      {
+        "id": "46",
+        "title": "Ev.-luth. Pfarramt",
+        "address": "Bornstraße 14",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Allertshausen",
+        "geo": [50.65873, 8.84647],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "47",
+        "title": "Dorfgemeinschaftshaus",
+        "address": "Am Berg 19",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Allertshausen",
+        "geo": [50.65979, 8.84766],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
+      }
+    ],
+    "15": []
+  },
+  "rüddingshausen": {
+    "1": [],
+    "2": [
+      {
+        "id": "48",
+        "title": "Kindergarten",
+        "address": "",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [],
+        "openhours":["08:00 - 16:00", "08:00 - 16:00", "08:00 - 16:00", "08:00 - 16:00", "08:00 - 16:00", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "49",
+        "title": "Grundschule",
+        "address": "Wermertshäuser Straße 2",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "-", "-"],
+        "info": ""
+      }
+    ],
+    "3": [
+      {
+        "id": "50",
+        "title": "EDEKA Sohl",
+        "address": "Weitershainer Straße 4",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 16.00", "-"],
+        "info": ""
+      },
+      {
+        "id": "50",
+        "title": "EDEKA Sohl",
+        "address": "Weitershainer Straße 4",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 16.00", "-"],
+        "info": ""
+      },
+      {
+        "id": "51",
+        "title": "Bäckerei Dickel",
+        "address": "Weitershainer Straße 4",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 13.00 & 15.00 – 19.00", "07.00 – 16.00", "-"],
+        "info": ""
+      }
+    ],
+    "4": [],
+    "5": [
+      {
+        "id": "52",
+        "title": "Spielplatz",
+        "address": "Odenhäuser Straße 4",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Under 12 years only! - Nur bis 12 Jahre!"
+      }
+    ],
+    "6": [
+      {
+        "id": "53",
+        "title": "Sportplatz",
+        "address": "Wermertshäuser Straße 15",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68974, 8.91499],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      }
+    ],
+    "7": [],
+    "8": [
+      {
+        "id": "54",
+        "title": "GU Tanzbar Lang",
+        "address": "Am Rain 1",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68729, 8.91697],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "9": [],
+    "10": [],
+    "11": [
+      {
+        "id": "55",
+        "title": "Briefkasten EDEKA",
+        "address": "Weitershainer Straße 4",
+        "logo": "",
+        "free": 2,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
+      },
+      {
+        "id": "56",
+        "title": "Briefkasten Grundschule",
+        "address": "Wermertshäuser Straße 2",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68882, 8.91595],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
+      }
+    ],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": []
+  },
+  "allendorf lumda": {
+    "1": [
+      {
+        "id": "69",
+        "title": "Arche – Menschen in Not Hilfsdienst e.V.",
+        "address": "Mühlwiese 2B",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67553, 8.81713],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "2": [
+      {
+        "id": "57",
+        "title": "Stadtbibliothek",
+        "address": "Bahnhofstraße 16",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67598, 8.82379],
+        "openhours":["-", "16:00 - 20:00", "-", "-", "-", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "58",
+        "title": "Gesamtschule Lumdatal",
+        "address": "Am Kinnwald 11",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.66859, 8.82736],
+        "openhours":["08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "59",
+        "title": "Grundschule Allendorf",
+        "address": "Schulstraße 7",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67945, 8.82435],
+        "openhours":["08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "-", "-"],
+        "info": ""
+      }
+    ],
+    "3": [
+      {
+        "id": "60",
+        "title": "Getränkefachhandel Franz Gerold",
+        "address": "Am Kreuzweg 5",
+        "logo": "",
+        "free": 3,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67908, 8.83131],
+        "openhours":["15:00 - 18:00", "15:00 - 18:00", "15:00 - 18:00", "10.00 – 13.00 & 15.00 – 18.00", "10.00 – 13.00 & 15.00 – 18.00", "09:00 - 14:00", "-"],
+        "info": ""
+      },
+      {
+        "id": "61",
+        "title": "EDEKA Ulrich",
+        "address": "Am Gewerbepark 1",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67492, 8.81120],
+        "openhours":["07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "-"],
+        "info": ""
+      },
+      {
+        "id": "62",
+        "title": "Bäckerei Dickel",
+        "address": "Marktstraße 6",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67807, 8.82312],
+        "openhours":["06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -13:00", "-"],
+        "info": ""
+      }
+    ],
+    "4": [],
+    "5": [],
+    "6": [
+      {
+        "id": "63",
+        "title": "Sportplatz",
+        "address": "Bahnhofstraße",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67569, 8.82569],
+        "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
+        "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      }
+    ],
+    "7": [],
+    "8": [
+      {
+        "id": "64",
+        "title": "GU Festplatz",
+        "address": "Am Festplatz",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67592, 8.82452],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "9": [
+      {
+        "id": "65",
+        "title": "Friseur Pfeifer",
+        "address": "Totenhäuser Weg 24",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Appointments by phone - Termine telefonisch"
+      }
+    ],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [
+      {
+        "id": "66",
+        "title": "Sparkasse",
+        "address": "Bahnhofstraße 14",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67611, 8.82404],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": ""
+      }
+    ],
+    "14": [
+      {
+        "id": "67",
+        "title": "Bürgerhaus",
+        "address": "Bahnhofstraße 16",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67611, 8.82404],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
+      }
+    ],
+    "15": [
+      {
+        "id": "68",
+        "title": "Stadtverwaltung",
+        "address": "Bahnhofstraße 16",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67611, 8.82404],
+        "openhours":["08:30 – 12:00", "08:30 – 12:00 & 14:00 – 15:30", "-", "08:30 – 12:00 & 14:00 – 18:00", "08:30 - 12:00", "-", "-"],
+        "info": ""
+      }
+    ]
+  },
+  "climbach": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": []
+  },
+  "nordeck": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": []
+  },
+  "winnen": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": []
   }
-
 }

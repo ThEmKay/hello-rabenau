@@ -59,7 +59,7 @@ public class DataContainer extends Cache{
             }
 
             int i = 0;
-            placesCategoriesIcons = new int[13];
+            placesCategoriesIcons = new int[15];
             placesCategoriesIcons[i] = R.drawable.ic_clothes;
             placesCategoriesIcons[++i] = R.drawable.ic_education;
             placesCategoriesIcons[++i] = R.drawable.ic_dining;
@@ -70,11 +70,15 @@ public class DataContainer extends Cache{
             placesCategoriesIcons[++i] = R.drawable.ic_home;
             placesCategoriesIcons[++i] = R.drawable.ic_haircut;
             placesCategoriesIcons[++i] = R.drawable.ic_bible;
-            placesCategoriesIcons[++i] = R.drawable.ic_internet;
+            placesCategoriesIcons[++i] = R.drawable.ic_bible;
             placesCategoriesIcons[++i] = R.drawable.ic_finance;
+            placesCategoriesIcons[++i] = R.drawable.ic_internet;
+            placesCategoriesIcons[++i] = R.drawable.ic_internet;
             placesCategoriesIcons[++i] = R.drawable.ic_internet;
 
             placesCategoriesLabels = c.getResources().getStringArray(R.array.places);
+
+            System.out.println(placesCategoriesLabels.length);
 
             cities = c.getResources().getStringArray(R.array.cities);
 
@@ -146,10 +150,7 @@ public class DataContainer extends Cache{
 
             JSONObject placesJson = new JSONObject(saveInternal(FILE_INTERN_PLACES));
 
-            String mockCities[] = new String[1];
-            mockCities[0] = "londorf";
-
-            int cats = 12;
+            int cats = 14;
             String mockCategories[] = new String[cats+1];
             for(int i = 0; i <= cats; i++){
 
@@ -157,8 +158,17 @@ public class DataContainer extends Cache{
 
             }
 
+
+            String cities[] = new String[3];
+            cities[0] = "londorf";
+            cities[1] = "geilshausen";
+            cities[2] = "rüddingshausen";
+
+
+
+
             // Caching der Orte-Daten (JSON wird so nur einmalig gelesen)
-            cachePlaces(placesJson, mockCities, mockCategories, co);
+            cachePlaces(placesJson, cities , mockCategories, co);
 
 
             /*
@@ -247,6 +257,10 @@ public class DataContainer extends Cache{
      */
     public ArrayList<PlacesContent> getPlacesCache(String city, String category){
         //return placesCache.get("alsfeld").get("1");
+
+
+        System.out.println(city);
+
         return placesCache.get(city).get(category);
     }
 

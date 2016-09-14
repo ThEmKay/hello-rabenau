@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListView;
 
 import vb.helloRabenau.R;
 import vb.helloRabenau.helpers.DataContainer;
@@ -23,9 +24,8 @@ public class PlacesActivity extends AppCompatActivity {
 
 
 
-
-
         if(labels.length == icons.length){
+
             GridView gridView = (GridView) findViewById(R.id.gridPlaces);
 
             gridView.setAdapter(new PlacesAdapter(this, icons, labels));

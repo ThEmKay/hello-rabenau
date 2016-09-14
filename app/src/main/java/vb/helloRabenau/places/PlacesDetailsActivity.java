@@ -49,7 +49,7 @@ public class PlacesDetailsActivity extends AppCompatActivity {
 
         // ##################
         // Container fuer die Wochentage holen
-        TextView oH[] = new TextView[6];
+        TextView oH[] = new TextView[7];
         TextView temp = (TextView) findViewById(R.id.timeMonday);
         oH[0] = temp;
         temp = (TextView) findViewById(R.id.timeTuesday);
@@ -62,6 +62,8 @@ public class PlacesDetailsActivity extends AppCompatActivity {
         oH[4] = temp;
         temp = (TextView) findViewById(R.id.timeSaturday);
         oH[5] = temp;
+        temp = (TextView) findViewById(R.id.timeSaturday);
+        oH[6] = temp;
 
         // Kalendertag ermitteln
         Calendar cal = Calendar.getInstance();

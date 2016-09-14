@@ -45,13 +45,17 @@ public class PlacesAdapter extends BaseAdapter {
             gridView = inflater.inflate(R.layout.activity_places_grid_item, null);
 
             // set value into textview
+            /*
             TextView label = (TextView) gridView.findViewById(R.id.grid_item_label);
-            label.setText(data.get(position).catCaption);
+            label.setText(labels[position]);
             ImageView icon = (ImageView) gridView.findViewById(R.id.places_item_icon);
             icon.setImageResource(icons[position]);
+            */
+
+            //notifyDataSetChanged();
 
 
-            notifyDataSetChanged();
+            System.out.println(position);
 
             // set image based on selected text
             //ImageView imageView = (ImageView) gridView.findViewById(R.id.grid_item_image);
@@ -73,6 +77,13 @@ public class PlacesAdapter extends BaseAdapter {
         } else {
             gridView = (View) convertView;
         }
+
+        TextView label = (TextView) gridView.findViewById(R.id.grid_item_label);
+        label.setText(labels[position]);
+        ImageView icon = (ImageView) gridView.findViewById(R.id.places_item_icon);
+        icon.setImageResource(icons[position]);
+
+
 
         return gridView;
     }

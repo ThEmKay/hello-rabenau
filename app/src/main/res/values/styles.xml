@@ -16,7 +16,7 @@
         <item name="android:titleTextStyle">@style/ActionBarWhite</item>
         <item name="titleTextStyle">@style/ActionBarWhite</item>
         <item name="android:logo">@drawable/ic_action_bar_menu</item>
-        <item name="logo">@drawable/app_logo</item>
+        <!--<item name="logo">@drawable/app_logo</item>-->
     </style>
     <!-- ########### -->
 

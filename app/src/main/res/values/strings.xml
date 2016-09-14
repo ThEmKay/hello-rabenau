@@ -8,6 +8,8 @@
         <item>@string/geilshausen</item>
         <item>@string/londorf</item>
         <item>@string/rüddingshausen</item>
+        <item>climbach</item>
+        <item>nordeck</item>
     </string-array>
 
     <string-array name="places">
@@ -24,6 +26,8 @@
         <item>Post</item>
         <item>Finanzen</item>
         <item>Bürokratie</item>
+        <item>Bürokratie2</item>
+        <item>Bürokratie3</item>
     </string-array>
 
     <string name="hometown">Hometown</string>
@@ -33,7 +37,7 @@
 
     <string name="ambulance">Ambulance</string>
     <string name="fire_accident">Fire / Accident</string>
-    <string name="violence_crime">Violence / Crime</string>
+    <string name="violence_crime">Police</string>
     <string name="btn_informationen">Useful Information</string>
     <string name="title_activity_doctors">Doctors</string>
     <string name="title_activity_emergency">Emergency</string>

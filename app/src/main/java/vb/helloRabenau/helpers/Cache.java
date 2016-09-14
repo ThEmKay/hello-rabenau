@@ -136,7 +136,6 @@ public class Cache {
             placesCache.put(city[i], placesInner);
         }
 
-        System.out.println(placesCache.get("alsfeld"));
         Log.i("CACHE", "PLACES BEENDET");
 
 /*
