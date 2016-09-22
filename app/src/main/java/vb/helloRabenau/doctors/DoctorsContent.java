@@ -17,6 +17,7 @@ public class DoctorsContent {
     public int lang2 = 0;
     public int lang3 = 0;
     public double geo[] = null;
+    public int docType = 0;
 
 
     public String getName(){
@@ -46,4 +47,6 @@ public class DoctorsContent {
     public int getLang3(){
         return lang3;
     }
+
+    public int getDocType() { return docType; }
 }

@@ -12,20 +12,23 @@
 
     <color name="ActionBarSettings">#666</color>
 
-    <color name="DoctorsPrimary">#AA66CC</color>
-    <color name="DoctorsPrimaryDark">#592572</color>
+    <color name="DoctorsPrimary">#99CC00</color>
+    <color name="DoctorsPrimaryDark">#536F00</color>
 
     <color name="PlacesPrimary">#FFBB33</color>
     <color name="PlacesPrimaryDark">#CC8A00</color>
 
-    <color name="PublicTransportPrimary">#99CC00</color>
-    <color name="PublicTransportPrimaryDark">#536F00</color>
+    <color name="PublicTransportPrimary">#AA66CC</color>
+    <color name="PublicTransportPrimaryDark">#592572</color>
 
     <color name="CalendarPrimary">#0066FF</color>
     <color name="CalendarPrimaryDark">#00327D</color>
 
     <color name="EmergencyPrimary">#CC0000</color>
     <color name="EmergencyPrimaryDark">#660000</color>
+
+    <color name="ContactPrimary">#3498db</color>
+    <color name="ContactPrimaryDark">#2980b9</color>
 
 
     <!-- darkBlue #0d47a1 -->

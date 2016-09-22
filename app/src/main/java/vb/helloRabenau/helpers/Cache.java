@@ -74,6 +74,15 @@ public class Cache {
                         uri = "@drawable/" + lang.getString(2);
                         doc.lang3 = co.getResources().getIdentifier(uri, null, co.getPackageName());
                     }
+
+                    if(d.getString("type") != ""){
+                        switch(d.getString("type")){
+                            case "dentist": doc.docType = co.getResources().getIdentifier("@drawable/ic_dentist", null, co.getPackageName());
+                                 System.out.println("JALLA JALLA"); break;
+                            default: doc.docType = 0; break;
+                        }
+                    }
+
                     data.add(doc);
                 }
             } catch (Exception e) {

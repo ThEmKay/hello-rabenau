@@ -66,5 +66,7 @@
     <string name="closed_holiday">Closed (holiday)</string>
     <string name="title_activity_places_details">PlacesDetailsActivity</string>
     <string name="title_activity_startup">StartupActivity</string>
+    <string name="title_activity_disclaimer">Disclaimer</string>
+    <string name="title_activity_contact">Contact</string>
 
 </resources>

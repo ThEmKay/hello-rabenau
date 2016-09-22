@@ -25,78 +25,89 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="vb.helloRabenau.StartupActivity"
+            android:name=".StartupActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="vb.helloRabenau.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="vb.helloRabenau.SettingsActivity"
+            android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="vb.helloRabenau.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppSettings" />
         <activity
-            android:name="vb.helloRabenau.doctors.DoctorsActivity"
+            android:name=".doctors.DoctorsActivity"
             android:label="@string/title_activity_doctors"
-            android:parentActivityName="vb.helloRabenau.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppDoctors" />
         <activity
-            android:name="vb.helloRabenau.doctors.DoctorsDetails"
+            android:name=".doctors.DoctorsDetails"
             android:label="@string/title_activity_doctors"
-            android:parentActivityName="vb.helloRabenau.doctors.DoctorsActivity"
+            android:parentActivityName=".doctors.DoctorsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppDoctors" />
         <activity
-            android:name="vb.helloRabenau.places.PlacesActivity"
+            android:name=".places.PlacesActivity"
             android:label="@string/title_activity_places"
-            android:parentActivityName="vb.helloRabenau.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppPlaces" />
         <activity
-            android:name="vb.helloRabenau.places.PlacesCategoryActivity"
+            android:name=".places.PlacesCategoryActivity"
             android:label=""
-            android:parentActivityName="vb.helloRabenau.places.PlacesActivity"
+            android:parentActivityName=".places.PlacesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppPlaces" />
         <activity
-            android:name="vb.helloRabenau.places.PlacesDetailsActivity"
+            android:name=".places.PlacesDetailsActivity"
             android:label="@string/title_activity_places_details"
-            android:parentActivityName="vb.helloRabenau.places.PlacesCategoryActivity"
+            android:parentActivityName=".places.PlacesCategoryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppPlaces" />
         <activity
-            android:name="vb.helloRabenau.publictransport.PublicTransportActivity"
+            android:name=".publictransport.PublicTransportActivity"
             android:label="@string/title_activity_public_transport"
-            android:parentActivityName="vb.helloRabenau.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppPublicTransport" />
         <activity
-            android:name="vb.helloRabenau.calendar.CalendarActivity"
+            android:name=".calendar.CalendarActivity"
             android:label="@string/title_activity_calendar"
-            android:parentActivityName="vb.helloRabenau.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppCalendar" />
         <activity
-            android:name="vb.helloRabenau.emergency.EmergencyActivity"
+            android:name=".emergency.EmergencyActivity"
             android:label="@string/title_activity_emergency"
-            android:parentActivityName="vb.helloRabenau.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppEmergency" />
+        <activity
+            android:name=".disclaimer.DisclaimerActivity"
+            android:label="@string/title_activity_disclaimer"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppSettings" />
+        <activity
+            android:name=".contact.ContactActivity"
+            android:label="@string/title_activity_contact"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppContact"></activity>
     </application>
 
 </manifest>

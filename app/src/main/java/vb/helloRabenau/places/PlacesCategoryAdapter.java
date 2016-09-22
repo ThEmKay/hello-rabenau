@@ -70,13 +70,10 @@ public class PlacesCategoryAdapter extends BaseAdapter {
         }
 
         switch(datalist.get(position).logo){
-            case "tafel": holder.plaLogo.setImageResource(R.drawable.logo_tafel_alsfeld); break;
-            case "aldi_nord": holder.plaLogo.setImageResource(R.drawable.logo_aldinord); break;
-            case "aldi_sued": holder.plaLogo.setImageResource(R.drawable.logo_aldisued); break;
-            case "herkules": holder.plaLogo.setImageResource(R.drawable.logo_herkules); break;
-            case "lidl": holder.plaLogo.setImageResource(R.drawable.logo_lidl); break;
-            case "penny": holder.plaLogo.setImageResource(R.drawable.logo_penny); break;
-            case "tegut": holder.plaLogo.setImageResource(R.drawable.logo_tegut); break;
+            case "bakery": holder.plaLogo.setImageResource(R.drawable.ic_bread); break;
+            case "butcher": holder.plaLogo.setImageResource(R.drawable.ic_meat); break;
+            case "liquor": holder.plaLogo.setImageResource(R.drawable.ic_liquor); break;
+            case "market": holder.plaLogo.setImageResource(R.drawable.ic_store); break;
             default: holder.plaLogo.setImageResource(R.drawable.ic_store); break;
         }
 

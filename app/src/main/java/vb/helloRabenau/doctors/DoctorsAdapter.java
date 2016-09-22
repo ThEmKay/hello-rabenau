@@ -55,6 +55,7 @@ public class DoctorsAdapter extends BaseAdapter {
             holder.docLang1 = (ImageView) convertView.findViewById(R.id.imgLanguage1);
             holder.docLang2 = (ImageView) convertView.findViewById(R.id.imgLanguage2);
             holder.docLang3 = (ImageView) convertView.findViewById(R.id.imgLanguage3);
+            holder.docType = (ImageView) convertView.findViewById(R.id.docType);
             convertView.setTag(holder);
         }else{
             holder = (Holder) convertView.getTag();
@@ -67,6 +68,7 @@ public class DoctorsAdapter extends BaseAdapter {
         holder.docLang1.setImageResource(datalist.get(position).getLang1());
         holder.docLang2.setImageResource(datalist.get(position).getLang2());
         holder.docLang3.setImageResource(datalist.get(position).getLang3());
+        holder.docType.setImageResource(datalist.get(position).getDocType());
 
         return convertView;
     }
@@ -79,5 +81,6 @@ public class DoctorsAdapter extends BaseAdapter {
         ImageView docLang1;
         ImageView docLang2;
         ImageView docLang3;
+        ImageView docType;
     }
 }

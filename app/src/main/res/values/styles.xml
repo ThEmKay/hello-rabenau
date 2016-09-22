@@ -110,6 +110,24 @@
     </style>
     <!-- ########### -->
 
+    <!-- CONTACT style -->
+    <style name="AppContact" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/ContactPrimary</item>
+        <item name="colorPrimaryDark">@color/ContactPrimaryDark</item>
+        <item name="actionBarStyle">@style/ActionBarContact</item>
+        <item name="android:actionBarStyle">@style/ActionBarContact</item>
+    </style>
+
+    <style name="ActionBarContact" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/ContactPrimary</item>
+        <item name="background">@color/ContactPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarWhite</item>
+        <item name="titleTextStyle">@style/ActionBarWhite</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <!-- ########### -->
+
     <!-- EMERGENCY style -->
     <style name="AppEmergency" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/EmergencyPrimary</item>

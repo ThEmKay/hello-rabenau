@@ -14,6 +14,8 @@ import android.view.View;
 import java.util.ArrayList;
 
 import vb.helloRabenau.calendar.CalendarActivity;
+import vb.helloRabenau.contact.ContactActivity;
+import vb.helloRabenau.disclaimer.DisclaimerActivity;
 import vb.helloRabenau.doctors.DoctorsActivity;
 import vb.helloRabenau.emergency.EmergencyActivity;
 import vb.helloRabenau.helpers.ResourceProvider;
@@ -72,6 +74,12 @@ public class MainActivity extends ActionBarActivity {
                     case 3:
                         startActivity(new Intent(v.getContext(), EmergencyActivity.class));
                         break;
+                    case 4:
+                        startActivity(new Intent(v.getContext(), ContactActivity.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(v.getContext(), DisclaimerActivity.class));
+                        break;
                 }
             }
         });
@@ -93,7 +101,7 @@ public class MainActivity extends ActionBarActivity {
         MainContent mc = new MainContent();
         mc.setPhotoId(R.drawable.ic_medical);
         mc.setCategory(translate(R.string.title_activity_doctors));
-        mc.setBaselineColor(Color.parseColor("#AA66CC"));
+        mc.setBaselineColor(Color.parseColor("#99CC00"));
         results.add(mc);
 
         mc = new MainContent();
@@ -105,7 +113,7 @@ public class MainActivity extends ActionBarActivity {
         mc = new MainContent();
         mc.setPhotoId(R.drawable.ic_transit);
         mc.setCategory(translate(R.string.title_activity_public_transport));
-        mc.setBaselineColor(Color.parseColor("#99CC00"));
+        mc.setBaselineColor(Color.parseColor("#AA66CC"));
         results.add(mc);
 
         /*
@@ -120,6 +128,18 @@ public class MainActivity extends ActionBarActivity {
         mc.setPhotoId(R.drawable.ic_emergency);
         mc.setCategory(translate(R.string.title_activity_emergency));
         mc.setBaselineColor(Color.parseColor("#CC0000"));
+        results.add(mc);
+
+        mc = new MainContent();
+        mc.setPhotoId(R.drawable.ic_contact);
+        mc.setCategory(translate(R.string.title_activity_contact));
+        mc.setBaselineColor(Color.parseColor("#3498db"));
+        results.add(mc);
+
+        mc = new MainContent();
+        mc.setPhotoId(R.drawable.ic_disclaimer);
+        mc.setCategory(translate(R.string.title_activity_disclaimer));
+        mc.setBaselineColor(Color.parseColor("#666666"));
         results.add(mc);
 
         return results;

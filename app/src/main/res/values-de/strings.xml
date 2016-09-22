@@ -8,7 +8,7 @@
     <string name="fire_accident">Feuer / Unfall</string>
     <string name="violence_crime">Polizei</string>
     <string name="btn_informationen">Nützliche Informationen</string>
-    <string name="title_activity_places">Orte</string>
+    <string name="title_activity_places">Orte, Häuser</string>
     <string name="title_activity_emergency">Notfall</string>
     <string name="title_activity_doctors">Ärzte</string>
     <string name="title_activity_public_transport">Verkehrsmittel</string>
@@ -29,4 +29,6 @@
     <string name="label_contact">Kontakt</string>
     <string name="closed_holiday">Geschlossen (Feiertag)</string>
     <string name="emergency">Notfall</string>
+    <string name="title_activity_disclaimer">Impressum</string>
+    <string name="title_activity_contact">Kontakt</string>
 </resources>

@@ -39,8 +39,15 @@
     <ImageView
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:id="@+id/imgLanguage1"
+        android:id="@+id/docType"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imgLanguage1"
+        android:layout_toLeftOf="@+id/docType"
         android:layout_alignParentBottom="true"
         />
 
@@ -59,6 +66,5 @@
         android:layout_toLeftOf="@+id/imgLanguage2"
         android:layout_alignParentBottom="true"
         />
-
 
 </RelativeLayout>

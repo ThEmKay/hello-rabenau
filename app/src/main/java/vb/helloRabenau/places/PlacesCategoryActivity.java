@@ -1,6 +1,7 @@
 package vb.helloRabenau.places;
 
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -33,7 +34,7 @@ public class PlacesCategoryActivity extends AppCompatActivity {
     private String categoryId;
 
     // Hilfe-Dialog
-    private AlertDialog.Builder builder;
+    private Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +86,6 @@ public class PlacesCategoryActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {}
         });
 
-
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -102,8 +102,6 @@ public class PlacesCategoryActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     @Override
@@ -111,7 +109,7 @@ public class PlacesCategoryActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_places_category, menu);
 
-        builder = new AlertDialog.Builder(this);
+        builder = new Builder(this);
         builder.setView(getLayoutInflater().inflate(R.layout.dialog_prices, null));
         builder.setIcon(R.drawable.ic_help);
         builder.setTitle("Hinweis");
@@ -121,14 +119,17 @@ public class PlacesCategoryActivity extends AppCompatActivity {
             }
         });
 
+
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        final AlertDialog dialog = builder.create();
         if(item.getItemId() == R.id.help){
-            builder.create().show();
+            dialog.show();
         }
         return super.onOptionsItemSelected(item);
     }
