@@ -14,4 +14,5 @@ public class PlacesContent {
     public int price = 0;
     public JSONArray openHours = null;
     public double[] geo = null;
+    public String info;
 }

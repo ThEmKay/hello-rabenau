@@ -23,7 +23,6 @@ public class PlacesActivity extends AppCompatActivity {
         final String labels[] = DataContainer.getInstance(getApplicationContext()).getPlacesCategoriesLabels();
 
 
-
         if(labels.length == icons.length){
 
             GridView gridView = (GridView) findViewById(R.id.gridPlaces);

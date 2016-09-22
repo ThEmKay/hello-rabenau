@@ -1,10 +1,16 @@
 package vb.helloRabenau.places;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,6 +33,11 @@ import vb.helloRabenau.helpers.Observer;
  */
 public class PlacesDetailsActivity extends AppCompatActivity {
 
+    // Info-Dialog
+    private AlertDialog.Builder builder;
+
+    private PlacesContent place;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +48,7 @@ public class PlacesDetailsActivity extends AppCompatActivity {
         Intent in = getIntent();
         ArrayList<PlacesContent> places = DataContainer.getInstance(getApplicationContext()).getPlacesCache(in.getStringExtra("city"), Observer.PlacesCategory);
         PlacesContent place = places.get(in.getIntExtra("placeId", 1) - 1);
+        this.place = place;
 
         // ##################
         // Titel der Activity gleich Bezeichnung des Ortes setzen
@@ -46,6 +58,8 @@ public class PlacesDetailsActivity extends AppCompatActivity {
         // Adresse setzen
         TextView plaAddress = (TextView) findViewById(R.id.txtAddress);
         plaAddress.setText(place.address + " " + place.city);
+
+        System.out.println(place.geo[0]);
 
         // ##################
         // Container fuer die Wochentage holen
@@ -62,7 +76,7 @@ public class PlacesDetailsActivity extends AppCompatActivity {
         oH[4] = temp;
         temp = (TextView) findViewById(R.id.timeSaturday);
         oH[5] = temp;
-        temp = (TextView) findViewById(R.id.timeSaturday);
+        temp = (TextView) findViewById(R.id.timeSunday);
         oH[6] = temp;
 
         // Kalendertag ermitteln
@@ -88,6 +102,8 @@ public class PlacesDetailsActivity extends AppCompatActivity {
                             case 2: img = (ImageView) findViewById(R.id.imgWednesday); break;
                             case 3: img = (ImageView) findViewById(R.id.imgThursday); break;
                             case 4: img = (ImageView) findViewById(R.id.imgFriday); break;
+                            case 5: img = (ImageView) findViewById(R.id.imgSaturday); break;
+                            case 6: img = (ImageView) findViewById(R.id.imgSunday); break;
                             default: img = (ImageView) findViewById(R.id.imgMonday); break;
                         }
                         img.setAlpha(0.2f);
@@ -115,8 +131,43 @@ public class PlacesDetailsActivity extends AppCompatActivity {
         // Map einzeichnen
         ViewGroup layout = (ViewGroup) findViewById(R.id.layoutPlacesDetails);
         MapBuilder map = new MapBuilder(getApplicationContext());
-        map.setGeoPoint(50.7507624,9.265958);
+        map.setGeoPoint(place.geo[0],place.geo[1]);
         layout.addView(map.drawMap());
 
+    }
+
+    // Menubar Info-Icon Funktionalität
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_places_details, menu);
+
+        LayoutInflater inflater = getLayoutInflater();
+        View customView = inflater.inflate(R.layout.dialog_place_info, null);
+        TextView infoText = (TextView) customView.findViewById(R.id.placeInfo);
+        infoText.setText(this.place.info);
+
+        builder = new AlertDialog.Builder(this);
+        builder.setView(customView);
+        builder.setIcon(R.drawable.ic_info_white_48dp);
+        builder.setTitle("Info");
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+            }
+        });
+
+        return true;
+    }
+
+    // Bei Click auf das Info-Icon Diaog öffnen
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId() == R.id.placeInfoDialog){
+
+            builder.create().show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

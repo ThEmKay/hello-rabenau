@@ -70,11 +70,11 @@ public class DataContainer extends Cache{
             placesCategoriesIcons[++i] = R.drawable.ic_home;
             placesCategoriesIcons[++i] = R.drawable.ic_haircut;
             placesCategoriesIcons[++i] = R.drawable.ic_bible;
-            placesCategoriesIcons[++i] = R.drawable.ic_bible;
+            placesCategoriesIcons[++i] = R.drawable.ic_briefkasten;
+            placesCategoriesIcons[++i] = R.drawable.ic_bus;
             placesCategoriesIcons[++i] = R.drawable.ic_finance;
-            placesCategoriesIcons[++i] = R.drawable.ic_internet;
-            placesCategoriesIcons[++i] = R.drawable.ic_internet;
-            placesCategoriesIcons[++i] = R.drawable.ic_internet;
+            placesCategoriesIcons[++i] = R.drawable.ic_community;
+            placesCategoriesIcons[++i] = R.drawable.ic_buerokratie;
 
             placesCategoriesLabels = c.getResources().getStringArray(R.array.places);
 
@@ -159,12 +159,17 @@ public class DataContainer extends Cache{
             }
 
 
-            String cities[] = new String[3];
+            String cities[] = new String[10];
             cities[0] = "londorf";
             cities[1] = "geilshausen";
             cities[2] = "rüddingshausen";
-
-
+            cities[3] = "kesselbach";
+            cities[4] = "odenhausen";
+            cities[5] = "allendorf lumda";
+            cities[6] = "allertshausen";
+            cities[7] = "winnen";
+            cities[8] = "climbach";
+            cities[9] = "nordeck";
 
 
             // Caching der Orte-Daten (JSON wird so nur einmalig gelesen)

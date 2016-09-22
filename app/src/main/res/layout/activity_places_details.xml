@@ -163,6 +163,25 @@
                 android:padding="2dp"
                 android:textColor="#000" />
 
+            <!-- SONNTAG -->
+            <ImageView
+                android:id="@+id/imgSunday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/imgSaturday"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_sunday" />
+            <TextView
+                android:id="@+id/timeSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 14:00 Uhr"
+                android:layout_below="@id/imgSaturday"
+                android:layout_toRightOf="@id/imgSunday"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:textColor="#000" />
+
         </RelativeLayout>
 
     </ScrollView>

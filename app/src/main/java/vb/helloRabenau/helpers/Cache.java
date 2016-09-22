@@ -115,11 +115,17 @@ public class Cache {
                         pla.address = p.getString("address");
                         pla.city = p.getString("city");
                         pla.logo = p.getString("logo");
-
                         pla.price = p.getInt("free");
+                        pla.info = p.getString("info");
 
                         if(!p.isNull("openhours")){
                             pla.openHours = p.getJSONArray("openhours");
+                        }
+                        if(!p.isNull("geo")){
+                            pla.geo = new double[2];
+                            JSONArray a = p.getJSONArray("geo");
+                            pla.geo[0] = a.getDouble(0);
+                            pla.geo[1] = a.getDouble(1);
                         }
 
                         data.add(pla);

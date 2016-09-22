@@ -48,7 +48,7 @@ public class PlacesCategoryActivity extends AppCompatActivity {
         // ListView Element wird aus dem Layout geholt
         final ListView list = (ListView) findViewById(R.id.list);
 
-        // Befuellen des Doktoren-Adapters
+        // Befuellen des Places-Adapters
         data = new ArrayList<PlacesContent>();
         adp = new PlacesCategoryAdapter(this, data);
         // Adapter wird der ListView zugewiesen
