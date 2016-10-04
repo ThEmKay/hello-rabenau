@@ -15,6 +15,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.geometry.LatLng;
+import com.mapbox.mapboxsdk.maps.MapView;
+import com.mapbox.mapboxsdk.maps.MapboxMap;
+import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
+
 import org.json.JSONException;
 
 import java.util.ArrayList;
@@ -129,10 +136,23 @@ public class PlacesDetailsActivity extends AppCompatActivity {
 
         // ##################
         // Map einzeichnen
-        ViewGroup layout = (ViewGroup) findViewById(R.id.layoutPlacesDetails);
-        MapBuilder map = new MapBuilder(getApplicationContext());
-        map.setGeoPoint(place.geo[0],place.geo[1]);
-        layout.addView(map.drawMap());
+        final PlacesContent placeMap = this.place;
+        MapView mapView = (MapView) findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(MapboxMap mapboxMap) {
+
+                CameraPosition pos = new CameraPosition.Builder().target(new LatLng(placeMap.geo[0], placeMap.geo[1])).zoom(15).build();
+                mapboxMap.setCameraPosition(pos);
+                mapboxMap.addMarker(new MarkerOptions()
+                        .position(new LatLng(placeMap.geo[0], placeMap.geo[1]))
+                        .title(placeMap.title)
+                        .snippet(placeMap.address));
+
+
+            }
+        });
 
     }
 
@@ -140,7 +160,16 @@ public class PlacesDetailsActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_places_details, menu);
+        if(place.info.length() > 1){
+            getMenuInflater().inflate(R.menu.menu_places_details, menu);
+        }
+
+        return true;
+    }
+
+    // Bei Click auf das Info-Icon Diaog öffnen
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
         LayoutInflater inflater = getLayoutInflater();
         View customView = inflater.inflate(R.layout.dialog_place_info, null);
@@ -154,15 +183,9 @@ public class PlacesDetailsActivity extends AppCompatActivity {
 
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
+
             }
         });
-
-        return true;
-    }
-
-    // Bei Click auf das Info-Icon Diaog öffnen
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
 
         if(item.getItemId() == R.id.placeInfoDialog){
 

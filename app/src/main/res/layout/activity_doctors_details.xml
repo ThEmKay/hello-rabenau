@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:orientation="vertical"
     android:layout_height="fill_parent"
@@ -33,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lblAddress"
                 android:layout_alignParentLeft="true"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:layout_marginBottom="10dp"
                 android:textColor="#000" />
 
@@ -197,8 +198,17 @@
                 android:textColor="#000"
                 android:layout_marginBottom="10dp" />
 
+
         </RelativeLayout>
 
     </ScrollView>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        mapbox:access_token="pk.eyJ1IjoibWtheTg5IiwiYSI6ImNpdG92MDM0YjAwMWIyem55dmd0Mms0eGIifQ.ZIZ0Cq_lzvB6yMDjK-XOdQ"
+        mapbox:style_url="mapbox://styles/mapbox/streets-v9" />
 
 </LinearLayout>

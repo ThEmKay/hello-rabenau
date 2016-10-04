@@ -9,6 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mapbox.mapboxsdk.MapboxAccountManager;
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.geometry.LatLng;
+import com.mapbox.mapboxsdk.maps.MapView;
+import com.mapbox.mapboxsdk.maps.MapboxMap;
+import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
+
 import org.json.JSONException;
 
 import java.util.ArrayList;
@@ -39,7 +47,7 @@ public class DoctorsDetails extends AppCompatActivity {
         // Datensatz des ausgewaehlten Doktors aus dem Cache holen
         int docId = getIntent().getIntExtra("id", 1);
         ArrayList<DoctorsContent> docs = DataContainer.getInstance(getApplicationContext()).getDoctors(getIntent().getStringExtra("city"));
-        DoctorsContent doc = docs.get(docId - 1);
+        final DoctorsContent doc = docs.get(docId - 1);
 
         // ##################
         // Titel der Activity = Name der Arztpraxis
@@ -140,6 +148,30 @@ public class DoctorsDetails extends AppCompatActivity {
 
         // ##################
         // Map ins Layout zaubern :)
+        // Mapbox access token only needs to be configured once in your app
+
+
+        // This contains the MapView in XML and needs to be called after the account manager
+        //setContentView(R.layout.activity_doctors_details);
+
+        MapView mapView = (MapView) findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+                                @Override
+                                public void onMapReady(MapboxMap mapboxMap) {
+
+                                    CameraPosition pos = new CameraPosition.Builder().target(new LatLng(doc.geo[0], doc.geo[1])).zoom(15).build();
+                                    mapboxMap.setCameraPosition(pos);
+                                    mapboxMap.addMarker(new MarkerOptions()
+                                            .position(new LatLng(doc.geo[0], doc.geo[1]))
+                                            .title(doc.getName())
+                                            .snippet(doc.getAdress()));
+
+
+                                }
+                            });
+
+        /*
         ViewGroup layout = (ViewGroup) findViewById(R.id.layoutDoctorsDetails);
         MapBuilder map = new MapBuilder(getApplicationContext());
         if(doc.geo != null){
@@ -147,6 +179,7 @@ public class DoctorsDetails extends AppCompatActivity {
             map.centerMap(doc.geo[0], doc.geo[1]);
         }
         layout.addView(map.drawMap());
+        */
 
     }
 }
