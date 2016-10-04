@@ -109,6 +109,13 @@ public class PlacesCategoryActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_places_category, menu);
 
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
         builder = new Builder(this);
         builder.setView(getLayoutInflater().inflate(R.layout.dialog_prices, null));
         builder.setIcon(R.drawable.ic_help);
@@ -119,15 +126,7 @@ public class PlacesCategoryActivity extends AppCompatActivity {
             }
         });
 
-
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        final AlertDialog dialog = builder.create();
+        AlertDialog dialog = builder.create();
         if(item.getItemId() == R.id.help){
             dialog.show();
         }

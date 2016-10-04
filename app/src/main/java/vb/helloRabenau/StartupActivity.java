@@ -11,7 +11,9 @@ import android.util.Log;
 import android.view.Display;
 import android.widget.ProgressBar;
 
-import org.osmdroid.tileprovider.constants.OpenStreetMapTileProviderConstants;
+//import org.osmdroid.tileprovider.constants.OpenStreetMapTileProviderConstants;
+
+import com.mapbox.mapboxsdk.MapboxAccountManager;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -56,42 +58,9 @@ public class StartupActivity extends AppCompatActivity {
             AppSettings.loadCitySetting(getApplicationContext());
             publishProgress((int) 20);
 
-            AssetManager as = getAssets();
-            File folder = new File(Environment.getExternalStorageDirectory() + "/osmdroid");
-            boolean success = true;
-            if (!folder.exists()) {
-                success = folder.mkdir();
-                Log.i("MAPDATEN", "Ordner wird erstellt");
-            }
-            if (success) {
-
-                Log.i("MAPDATEN", "Werden kopiert");
-                try {
-                    InputStream in = as.open("MapquestOSM.zip");
-                    OutputStream out = new FileOutputStream(Environment.getExternalStorageDirectory() + "/osmdroid/MapquestOSM.zip");
-
-                    byte[] buffer = new byte[1024];
-                    int read;
-                    while ((read = in.read(buffer)) != -1) {
-                        out.write(buffer, 0, read);
-                    }
-
-                    in.close();
-                    in = null;
-                    out.flush();
-                    out.close();
-                    out = null;
-
-                    Log.i("MAPDATEN", "Fertig kopiert!");
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
             publishProgress((int) 40);
 
-            OpenStreetMapTileProviderConstants.setOfflineMapsPath(Environment.getExternalStorageDirectory() + "/osmdroid");
-            OpenStreetMapTileProviderConstants.setCachePath(Environment.getExternalStorageDirectory() + "/osmdroid");
+            MapboxAccountManager.start(getApplicationContext(), "pk.eyJ1IjoibWtheTg5IiwiYSI6ImNpdG92MDM0YjAwMWIyem55dmd0Mms0eGIifQ.ZIZ0Cq_lzvB6yMDjK-XOdQ");
             publishProgress((int) 60);
 
             DataContainer.getInstance(getApplicationContext());

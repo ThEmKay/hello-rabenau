@@ -1,9 +1,13 @@
 package vb.helloRabenau.helpers;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 
+import com.mapbox.mapboxsdk.maps.MapView;
+/*
 import org.osmdroid.DefaultResourceProxyImpl;
 import org.osmdroid.ResourceProxy;
+import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.tileprovider.tilesource.XYTileSource;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
@@ -17,8 +21,12 @@ import vb.helloRabenau.R;
 /**
  * Created by Seb on 01.01.2016.
  */
-public class MapBuilder extends MapView {
 
+public class MapBuilder extends MapView {
+    public MapBuilder(@NonNull Context context) {
+        super(context);
+    }
+/*
     final ResourceProxy mResourceProxy;
 
     ArrayList<OverlayItem> mapMarkers = new ArrayList<OverlayItem>();
@@ -31,7 +39,7 @@ public class MapBuilder extends MapView {
         setClickable(true);
         setMaxZoomLevel(16);
         setMinZoomLevel(16);
-        setTileSource(new XYTileSource("MapquestOSM", 0, 18, 256, ".jpg", new String[]{}));
+        //setTileSource(new XYTileSource(TileSourceFactory."MapquestOSM", 0, 18, 256, ".jpg", new String[]{}));
         getController().setZoom(16);
 
         setUseDataConnection(false);
@@ -81,6 +89,6 @@ public class MapBuilder extends MapView {
         return this;
     }
 
-
+*/
 
 }
