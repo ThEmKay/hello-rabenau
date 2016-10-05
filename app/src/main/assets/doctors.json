@@ -39,7 +39,7 @@
   ],
   "rüddingshausen": [
     {
-      "id":"1",
+      "id":"4",
       "title":"Dr. med. Thomas Lex",
       "address":"Hundsgasse 11",
       "postal":"35466",
@@ -51,7 +51,7 @@
       "type": "general"
     },
     {
-      "id":"2",
+      "id":"5",
       "title":"Dr. med. Julia de Boor",
       "address":"Hundsgasse 11",
       "postal":"35466",
@@ -65,13 +65,27 @@
   ],
   "geilshausen": [
     {
-      "id":"1",
+      "id":"6",
       "title":"Ärztehaus Rabenau",
       "address":"Weidenstraße 19",
       "postal":"35466",
       "location":"Geilshausen",
       "phone":"(06407) 75 75",
       "geo": [50.6637415, 8.8614232],
+      "openhours":["08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00"],
+      "languages":["uk"],
+      "type": "general"
+    }
+  ],
+  "allendorf lumda": [
+    {
+      "id":"7",
+      "title": "",
+      "address":"",
+      "postal":"",
+      "location":"Allendorf Lumda",
+      "phone":"",
+      "geo": [],
       "openhours":["08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00"],
       "languages":["uk"],
       "type": "general"
