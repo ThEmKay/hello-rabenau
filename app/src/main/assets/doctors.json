@@ -80,15 +80,39 @@
   "allendorf lumda": [
     {
       "id":"7",
-      "title": "",
-      "address":"",
-      "postal":"",
+      "title": "Dr. Jürgen Schönborn und Christian Kunhart",
+      "address":"Ludwigstraße 8",
+      "postal":"35469",
       "location":"Allendorf Lumda",
-      "phone":"",
-      "geo": [],
-      "openhours":["08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00"],
+      "phone":"06407 5055",
+      "geo": [50.67477, 8.82218],
+      "openhours":[""],
       "languages":["uk"],
       "type": "general"
+    },
+    {
+      "id":"8",
+      "title": "Dr. med. Herbert Conrad und Michael Kiesow",
+      "address":"Bleichstraße 2",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 7040",
+      "geo": [50.67619, 8.82259],
+      "openhours":[""],
+      "languages":["uk"],
+      "type": "general"
+    },
+    {
+      "id":"9",
+      "title": "Dr. Wolf-Ulrich Rohrbach",
+      "address":"Am Bahnhof 2",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 7640",
+      "geo": [50.67333, 8.82361],
+      "openhours":["08:00 - 12:00 & 14:00 - 18:00", "08:00 - 12:00 & 14:00 - 18:00", "08:00 - 12:00", "08:00 - 12:00 & 14:00 - 16:00", "08:00 - 12:00 & 14:00 - 16:00"],
+      "languages":["uk"],
+      "type": "dentist"
     }
   ]
 }

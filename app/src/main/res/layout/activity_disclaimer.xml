@@ -58,4 +58,40 @@
         android:text="E-Mail: hello.rabenau-allendorf@gmx.de"
         android:id="@+id/disclaimer6" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:text="About"
+        android:id="@+id/about" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alle Icons in dieser App entstammen der Seite: https://icons8.com/"
+        android:id="@+id/about2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alle Karten in dieser App entstammen der Seite: https://www.openstreetmap.org"
+        android:id="@+id/about2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wir bedanken uns für Bereitstellung der Ressourcen"
+        android:id="@+id/about5" />
+
 </LinearLayout>

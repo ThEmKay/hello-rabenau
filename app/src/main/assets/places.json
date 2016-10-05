@@ -207,6 +207,18 @@
         "geo": [50.67496, 8.86218],
         "openhours":["-", "-", "-", "-", "-", "-", "-"],
         "info": "Church every sunday at 10:30 am - Gottesdienst jeden Sonntag um 10:30 Uhr"
+      },
+      {
+        "id": "73",
+        "title": "Freie evangelische Gemeinde Lumdatal",
+        "address": "Lumdastraße 52",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67853, 8.85077],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Church every sunday at 10:30 am - Gottesdienst jeden Sonntag um 10:30 Uhr"
       }
     ],
     "11": [
@@ -271,7 +283,68 @@
         "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
       }
     ],
-    "12": [],
+    "12": [
+      {
+        "id": "90",
+        "title": "Bushaltestelle Wallstraße",
+        "address": "Wallstraße 16",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67684, 8.85948],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520"
+      },
+      {
+        "id": "91",
+        "title": "Bushaltestelle Giessner Straße",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67592, 8.85505],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "92",
+        "title": "Bushaltestelle Burggarten",
+        "address": "Giessner Straße",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67505, 8.86320],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "93",
+        "title": "Bushaltestelle Allertshäuser Straße",
+        "address": "Allertshäuser Straße 6",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67510, 8.85755],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520"
+      },
+      {
+        "id": "94",
+        "title": "Bushaltestelle Grundschule",
+        "address": "Mozartstraße 20",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Londorf",
+        "geo": [50.67581, 8.87085],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 55"
+      }
+    ],
     "13": [
       {
         "id": "22",
@@ -440,7 +513,33 @@
         "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
       }
     ],
-    "12": [],
+    "12": [
+      {
+        "id": "95",
+        "title": "Bushaltestelle Londorfer Straße",
+        "address": "Londorfer Straße",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66969, 8.87266],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "96",
+        "title": "Bushaltestelle DGH",
+        "address": "Alsfelder Straße 29",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Kesselbach",
+        "geo": [50.66924, 8.87675],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+
+    ],
     "13": [],
     "14": [
       {
@@ -534,7 +633,32 @@
       }
     ],
     "11": [],
-    "12": [],
+    "12": [
+      {
+        "id": "97",
+        "title": "Bushaltestelle Kirche",
+        "address": "Grünberger Straße 31",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64671, 8.89535],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "100",
+        "title": "Bushaltestelle Festplatz",
+        "address": "Weidenstraße",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Geilshausen",
+        "geo": [50.64451, 8.89132],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 55"
+      }
+    ],
     "13": [],
     "14": [],
     "15": []
@@ -574,9 +698,59 @@
         "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
       }
     ],
-    "10": [],
+    "10": [
+      {
+        "id": "89",
+        "title": "Pfarrhaus",
+        "address": "Hauptstraße 18",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66004, 8.88916],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": ""
+      },
+      {
+        "id": "88",
+        "title": "Ev. Kirche St. Alban",
+        "address": "Kirchstraße",
+        "logo": "",
+        "free": 0,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66180, 8.89044],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": ""
+      }
+    ],
     "11": [],
-    "12": [],
+    "12": [
+      {
+        "id": "98",
+        "title": "Bushaltestelle Hauptstraße",
+        "address": "Hauptstraße 20",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66030, 8.88982],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "99",
+        "title": "Bushaltestelle Kirchstraße",
+        "address": "Kirchstraße",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Odenhausen",
+        "geo": [50.66227, 8.89091],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 55"
+      }
+    ],
     "13": [],
     "14": [
       {
@@ -645,7 +819,20 @@
     "9": [],
     "10": [],
     "11": [],
-    "12": [],
+    "12": [
+      {
+        "id": "101",
+        "title": "Bushaltestelle Am Weiher",
+        "address": "Beuerner Straße 24",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Allertshausen",
+        "geo": [50.65789, 8.85127],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+    ],
     "13": [],
     "14": [
       {
@@ -801,7 +988,44 @@
         "info": "Collection times at the mailbox - Leerungszeiten am Briefkasten"
       }
     ],
-    "12": [],
+    "12": [
+      {
+        "id": "102",
+        "title": "Bushaltestelle Odenhäuser Straße",
+        "address": "Odenhäuser Straße 12",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68558, 8.91651],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "103",
+        "title": "Bushaltestelle Sportplatz",
+        "address": "Wermertshäuser Straße 14",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.69027, 8.91394],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55, Linie MR-86"
+      },
+      {
+        "id": "104",
+        "title": "Bushaltestelle Grundschule",
+        "address": "Wermertshäuser Straße 2",
+        "logo": "",
+        "free": 1,
+        "postal": "35466",
+        "city": "Rüddingshausen",
+        "geo": [50.68888, 8.91584],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+    ],
     "13": [],
     "14": [],
     "15": []
@@ -819,6 +1043,30 @@
         "geo": [50.67553, 8.81713],
         "openhours":["-", "-", "-", "-", "-", "-", "-"],
         "info": ""
+      },
+      {
+        "id": "78",
+        "title": "Textilhaus Bender",
+        "address": "Treiser Straße 45",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67777, 8.82173],
+        "openhours":["", "", "", "", "", "", "-"],
+        "info": ""
+      },
+      {
+        "id": "79",
+        "title": "Waltraud's Modeboutique",
+        "address": "Bahnhofstraße 13",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67665, 8.82263],
+        "openhours":["-", "10:00 - 12:30 & 15:00 - 18:00", "10:00 - 12:30", "10:00 - 12:30 & 15:00 - 18:00", "10:00 - 12:30 & 15:00 - 18:00", "10:00 - 12:30", "-"],
+        "info": "DHL Paketshop"
       }
     ],
     "2": [
@@ -855,6 +1103,18 @@
         "postal": "35469",
         "city": "Allendorf Lumda",
         "geo": [50.67945, 8.82435],
+        "openhours":["08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "74",
+        "title": "Kindergarten Allendorf (Lumda)",
+        "address": "Totenhäuser Weg 17",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67785, 8.81607],
         "openhours":["08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "08:00 - 13:00", "-", "-"],
         "info": ""
       }
@@ -895,9 +1155,34 @@
         "geo": [50.67807, 8.82312],
         "openhours":["06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -18:00", "06:30 -13:00", "-"],
         "info": ""
+      },
+      {
+        "id": "81",
+        "title": "Holzapfeö's Bäckerladen GmbH",
+        "address": "Am Gewerbepark 1",
+        "logo": "bakery",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67492, 8.81120],
+        "openhours":["07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "07:00 - 20:00", "-"],
+        "info": ""
       }
     ],
-    "4": [],
+    "4": [
+      {
+        "id": "69",
+        "title": "Bahnhof Apotheke",
+        "address": "Bahnhofstraße 37",
+        "logo": "",
+        "free": 3,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67392, 8.82323],
+        "openhours":["08:00 - 13:00 & 14:30 - 18:30", "08:00 - 13:00 & 14:30 - 18:30", "08:00 - 13:00 & 14:30 - 18:30", "08:00 - 13:00 & 14:30 - 18:30", "08:00 - 13:00 & 14:30 - 18:30", "08:00 - 13:00", "-"],
+        "info": ""
+      }
+    ],
     "5": [],
     "6": [
       {
@@ -911,6 +1196,30 @@
         "geo": [50.67569, 8.82569],
         "openhours":["08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00", "08:00 - 22:00"],
         "info": "Be quiet after 10pm! - Nach 22 Uhr leise sein!"
+      },
+      {
+        "id": "77",
+        "title": "Kegelbahnen im Bürgerhaus Allendorf",
+        "address": "Bahnhofstraße 16",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67611, 8.82404],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
+      },
+      {
+        "id": "82",
+        "title": "Tennisclub 1972 e.V.",
+        "address": "An den Teichen 6",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67194, 8.82294],
+        "openhours":["-", "-", "-", "-", "-", "-", "-"],
+        "info": "Needs private reservation - Private Reservierung notwendig"
       }
     ],
     "7": [],
@@ -942,9 +1251,108 @@
         "info": "Appointments by phone - Termine telefonisch"
       }
     ],
-    "10": [],
-    "11": [],
-    "12": [],
+    "10": [
+      {
+        "id": "70",
+        "title": "Evangelische Kirchengemeinde Allendorf (Lumda)",
+        "address": "Marktstraße 13",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67920, 8.82286],
+        "openhours":["-", "09:00 - 12:00", "-", "16:00 - 18:00", "09:00 - 11:00", "-", "-"],
+        "info": ""
+      },
+      {
+        "id": "72",
+        "title": "Lutherische Zionsgemeinde SELK",
+        "address": "Friedhofstraße 5",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67782, 8.82660],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": ""
+      }
+    ],
+    "11": [
+      {
+        "id": "80",
+        "title": "Waltraud's Modeboutique - DHL Paketshop",
+        "address": "Bahnhofstraße 13",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67665, 8.82263],
+        "openhours":["-", "10:00 - 12:30 & 15:00 - 18:00", "10:00 - 12:30", "10:00 - 12:30 & 15:00 - 18:00", "10:00 - 12:30 & 15:00 - 18:00", "10:00 - 12:30", "-"],
+        "info": "DHL Paketshop"
+      }
+    ],
+    "12": [
+      {
+        "id": "105",
+        "title": "Bushaltestelle Treiser Straße",
+        "address": "Treiser Straße 17",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67750, 8.82032],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "106",
+        "title": "Bushaltestelle Nordecker Straße",
+        "address": "Nordecker Straße 25",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67932, 8.82409],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "107",
+        "title": "Bushaltestelle Bahnhofstraße",
+        "address": "Bahnhofstraße 39",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67358, 8.82325],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "108",
+        "title": "Bushaltestelle Gesamtschule",
+        "address": "Am Kinnwald 11",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.66866, 8.82594],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "109",
+        "title": "Bushaltestelle Londorfer Straße",
+        "address": "Londorfer Straße 23",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.67765, 8.82618],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+    ],
     "13": [
       {
         "id": "66",
@@ -1000,7 +1408,20 @@
     "9": [],
     "10": [],
     "11": [],
-    "12": [],
+    "12": [
+      {
+        "id": "110",
+        "title": "Bushaltestelle Beuerner Straße",
+        "address": "Beuerner Straße 18",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Climbach",
+        "geo": [50.65881, 8.81809],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+    ],
     "13": [],
     "14": [],
     "15": []
@@ -1011,20 +1432,82 @@
     "3": [],
     "4": [],
     "5": [],
-    "6": [],
+    "6": [
+      {
+        "id": "76",
+        "title": "Kegelbahn im Bürgerhaus Nordeck",
+        "address": "Winner Höhe 19",
+        "logo": "",
+        "free": 2,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [
+          50.69223,
+          8.83500
+        ],
+        "openhours": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "info": "Reservierung über den Wirt - Needs Reservation"
+      }
+    ],
     "7": [],
     "8": [],
     "9": [],
     "10": [],
     "11": [],
-    "12": [],
+    "12": [
+      {
+        "id": "111",
+        "title": "Bushaltestelle Giessner Straße",
+        "address": "Giessner Straße 5",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Nordeck",
+        "geo": [50.69077, 8.83999],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      },
+      {
+        "id": "112",
+        "title": "Bushaltestelle Am Seeköppel",
+        "address": "Rabenauer Straße 55",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Nordeck",
+        "geo": [50.69077, 8.83999],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+    ],
     "13": [],
     "14": [],
     "15": []
   },
   "winnen": {
     "1": [],
-    "2": [],
+    "2": [
+      {
+        "id": "75",
+        "title": "Kindergarten Nordeck-Winnen",
+        "address": "Winner Höhe 19",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [50.69223, 8.83500],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": ""
+      }
+    ],
     "3": [],
     "4": [],
     "5": [],
@@ -1032,9 +1515,46 @@
     "7": [],
     "8": [],
     "9": [],
-    "10": [],
+    "10": [
+      {
+        "id": "71",
+        "title": "Evangelische Kirchengemeinde Winnen",
+        "address": "Marburger Straße 26",
+        "logo": "",
+        "free": 0,
+        "postal": "35469",
+        "city": "Allendorf Lumda",
+        "geo": [
+          50.69514,
+          8.83079
+        ],
+        "openhours": [
+          "08:00 - 13:00",
+          "08:00 - 13:00",
+          "08:00 - 13:00",
+          "08:00 - 13:00",
+          "08:00 - 13:00",
+          "-",
+          "-"
+        ],
+        "info": ""
+      }
+    ],
     "11": [],
-    "12": [],
+    "12": [
+      {
+        "id": "113",
+        "title": "Bushaltestelle Rosenplatz",
+        "address": "Marburger Straße 22",
+        "logo": "",
+        "free": 1,
+        "postal": "35469",
+        "city": "Winnen",
+        "geo": [50.69077, 8.83999],
+        "openhours":["", "", "", "", "", "", ""],
+        "info": "Linie 520, Linie 55"
+      }
+    ],
     "13": [],
     "14": [],
     "15": []
