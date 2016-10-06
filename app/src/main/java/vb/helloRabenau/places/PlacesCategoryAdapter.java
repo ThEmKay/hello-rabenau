@@ -74,6 +74,24 @@ public class PlacesCategoryAdapter extends BaseAdapter {
             case "butcher": holder.plaLogo.setImageResource(R.drawable.ic_meat); break;
             case "liquor": holder.plaLogo.setImageResource(R.drawable.ic_liquor); break;
             case "market": holder.plaLogo.setImageResource(R.drawable.ic_store); break;
+            case "barbershop": holder.plaLogo.setImageResource(R.drawable.ic_barbershop); break;
+            case "boccia": holder.plaLogo.setImageResource(R.drawable.ic_boccia); break;
+            case "bowling": holder.plaLogo.setImageResource(R.drawable.ic_bowling); break;
+            case "busstop": holder.plaLogo.setImageResource(R.drawable.ic_busstop); break;
+            case "cross": holder.plaLogo.setImageResource(R.drawable.ic_cross); break;
+            case "golf": holder.plaLogo.setImageResource(R.drawable.ic_golf); break;
+            case "gu": holder.plaLogo.setImageResource(R.drawable.ic_gu); break;
+            case "kindergarden": holder.plaLogo.setImageResource(R.drawable.ic_kindergarden); break;
+            case "office": holder.plaLogo.setImageResource(R.drawable.ic_office); break;
+            case "playground": holder.plaLogo.setImageResource(R.drawable.ic_playground); break;
+            case "postbox": holder.plaLogo.setImageResource(R.drawable.ic_postbox); break;
+            case "school": holder.plaLogo.setImageResource(R.drawable.ic_school); break;
+            case "shirtshop": holder.plaLogo.setImageResource(R.drawable.ic_shirtshop); break;
+            case "soccer": holder.plaLogo.setImageResource(R.drawable.ic_soccer); break;
+            case "tennis": holder.plaLogo.setImageResource(R.drawable.ic_tennis); break;
+            case "pharmacy": holder.plaLogo.setImageResource(R.drawable.ic_pharmacy); break;
+            case "hall": holder.plaLogo.setImageResource(R.drawable.ic_hall); break;
+            case "museum": holder.plaLogo.setImageResource(R.drawable.ic_museum); break;
             default: holder.plaLogo.setImageResource(R.drawable.ic_store); break;
         }
 

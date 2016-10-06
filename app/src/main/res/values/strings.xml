@@ -11,7 +11,7 @@
         <item>Allertshausen</item>
         <item>Climbach</item>
         <item>@string/geilshausen</item>
-        <item>Kesselbach</item>
+        <item>@string/kesselbach</item>
         <item>@string/londorf</item>
         <item>Nordeck</item>
         <item>Odenhausen</item>
@@ -38,9 +38,10 @@
     </string-array>
 
     <string name="hometown">Hometown</string>
-    <string name="geilshausen">Geilshausen</string>
-    <string name="londorf">Londorf</string>
-    <string name="rüddingshausen">Rüddingshausen</string>
+    <string name="geilshausen" translatable="false">Geilshausen</string>
+    <string name="londorf" translatable="false">Londorf</string>
+    <string name="rüddingshausen" translatable="false">Rüddingshausen</string>
+    <string name="kesselbach" translatable="false">Kesselbach</string>
 
     <string name="ambulance">Ambulance</string>
     <string name="fire_accident">Fire / Accident</string>

@@ -31,7 +31,7 @@
       "postal":"35466",
       "location":"Londorf",
       "phone":"(06407) 64 44",
-      "geo": [ 50.675497, 8.8641266],
+      "geo": [50.675497, 8.8641266],
       "openhours":["", "", "", "", ""],
       "languages":["uk"],
       "type": "dentist"
@@ -86,7 +86,7 @@
       "location":"Allendorf Lumda",
       "phone":"06407 5055",
       "geo": [50.67477, 8.82218],
-      "openhours":[""],
+      "openhours":["", "", "", "", ""],
       "languages":["uk"],
       "type": "general"
     },
@@ -98,7 +98,7 @@
       "location":"Allendorf Lumda",
       "phone":"06407 7040",
       "geo": [50.67619, 8.82259],
-      "openhours":[""],
+      "openhours":["", "", "", "", ""],
       "languages":["uk"],
       "type": "general"
     },
@@ -113,6 +113,138 @@
       "openhours":["08:00 - 12:00 & 14:00 - 18:00", "08:00 - 12:00 & 14:00 - 18:00", "08:00 - 12:00", "08:00 - 12:00 & 14:00 - 16:00", "08:00 - 12:00 & 14:00 - 16:00"],
       "languages":["uk"],
       "type": "dentist"
+    }
+  ],
+  "Kesselbach": [
+    {
+      "id":"10",
+      "title":"Dr. med. Thomas Lex",
+      "address":"Wallstraße 19",
+      "postal":"35466",
+      "location":"Londorf",
+      "phone":"(06407) 76 77",
+      "geo": [50.6763415, 8.8614232],
+      "openhours":["08:00 - 11:00", "08:00 - 11:00 & 18:00 - 19:00", "08:00 - 11:00", "08:00 - 11:00 & 18:00 - 19:00", "08:00 - 11:00"],
+      "languages":["uk", "ru"],
+      "type": "general"
+    }
+  ],
+  "Odenhausen": [
+    {
+      "id":"11",
+      "title":"Ärztehaus Rabenau",
+      "address":"Weidenstraße 19",
+      "postal":"35466",
+      "location":"Geilshausen",
+      "phone":"(06407) 75 75",
+      "geo": [50.6637415, 8.8614232],
+      "openhours":["08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00", "08:00 - 12:00 & 14:00 - 19:00", "08:00 - 12:00 & 14:00 - 19:00"],
+      "languages":["uk"],
+      "type": "general"
+    }
+  ],
+  "Allertshausen": [
+    {
+      "id":"12",
+      "title": "Dr. Jürgen Schönborn und Christian Kunhart",
+      "address":"Ludwigstraße 8",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 5055",
+      "geo": [50.67477, 8.82218],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    },
+    {
+      "id":"13",
+      "title": "Dr. med. Herbert Conrad und Michael Kiesow",
+      "address":"Bleichstraße 2",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 7040",
+      "geo": [50.67619, 8.82259],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    }
+  ],
+  "Nordeck": [
+    {
+      "id":"14",
+      "title": "Dr. Jürgen Schönborn und Christian Kunhart",
+      "address":"Ludwigstraße 8",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 5055",
+      "geo": [50.67477, 8.82218],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    },
+    {
+      "id":"15",
+      "title": "Dr. med. Herbert Conrad und Michael Kiesow",
+      "address":"Bleichstraße 2",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 7040",
+      "geo": [50.67619, 8.82259],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    }
+  ],
+  "Winnen": [
+    {
+      "id":"16",
+      "title": "Dr. Jürgen Schönborn und Christian Kunhart",
+      "address":"Ludwigstraße 8",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 5055",
+      "geo": [50.67477, 8.82218],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    },
+    {
+      "id":"17",
+      "title": "Dr. med. Herbert Conrad und Michael Kiesow",
+      "address":"Bleichstraße 2",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 7040",
+      "geo": [50.67619, 8.82259],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    }
+  ],
+  "Climbach": [
+    {
+      "id":"18",
+      "title": "Dr. Jürgen Schönborn und Christian Kunhart",
+      "address":"Ludwigstraße 8",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 5055",
+      "geo": [50.67477, 8.82218],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
+    },
+    {
+      "id":"197",
+      "title": "Dr. med. Herbert Conrad und Michael Kiesow",
+      "address":"Bleichstraße 2",
+      "postal":"35469",
+      "location":"Allendorf Lumda",
+      "phone":"06407 7040",
+      "geo": [50.67619, 8.82259],
+      "openhours":["", "", "", "", ""],
+      "languages":["uk"],
+      "type": "general"
     }
   ]
 }
