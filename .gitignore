@@ -7,6 +7,7 @@
 /captures
 /.idea/gradle.xml
 /.idea/misc.xml
+/.idea
+/.gradle
+build.gradle
 /app/app.iml
-app/app.iml
-app/app.iml
