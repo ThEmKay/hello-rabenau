@@ -43,7 +43,7 @@
         android:id="@+id/imgFree"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:visibility="visible"
         android:src="@drawable/ic_pic_free" />
